@@ -1,13 +1,13 @@
 ---
-title: Top 4 Detroit Website Design Mistakes to Avoid
-url: Top 4 Detroit Website Design Mistakes to Avoid
-description: Top 4 Detroit Website Mistakes You Must Avoid
+title: Top 4 Detroit Website Design
+url: Top 4 Detroit Website Design Mistakes
+description: Top 4 Detroit Website Mistakes
 author: gandalf
 date: 2024-06-24T15:36:00.000Z
 tags:
   - post
 image: /assets/images/blog/brooke-cagle-nqmvx8c8njq-unsplash.jpg
-imageAlt: Top 4 Detroit Website Design Mistakes to Avoid
+imageAlt: Top 4 Detroit Website Design Mistakes
 ---
 Your website is your 24/7 salesperson. It is often the first interaction potential customers have with your business. Imagine if that first encounter didn't go as planned. Could it be costing you valuable customers?
 
