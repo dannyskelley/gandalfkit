@@ -9,7 +9,7 @@ tags:
 image: /assets/images/blog/marvin-meyer-syto3xs06fu-unsplash.jpg
 imageAlt: How much does a website cost in Detroit?
 ---
-## Here you can see a 2024 Web Design pricing guide -
+### Here you can see a 2024 Web Design pricing guide -
 
 [clutch.co/web-designers/pricing](https://clutch.co/web-designers/pricing)
 
