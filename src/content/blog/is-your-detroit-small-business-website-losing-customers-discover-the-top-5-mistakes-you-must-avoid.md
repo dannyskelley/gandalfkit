@@ -1,17 +1,13 @@
 ---
-title: Is Your Detroit Small Business Website Losing Customers? Discover the Top
-  5 Mistakes You Must Avoid
-url: Is Your Detroit Small Business Website Losing Customers? Discover the Top 5
-  Mistakes You Must Avoid
-description: Is Your Detroit Small Business Website Losing Customers? Discover
-  the Top 5 Mistakes You Must Avoid
+title: Top 4 Detroit Website Mistakes You Must Avoid
+url: Top 4 Detroit Website Mistakes You Must Avoid
+description: Top 4 Detroit Website Mistakes You Must Avoid
 author: gandalf
 date: 2024-06-24T15:36:00.000Z
 tags:
   - post
 image: /assets/images/blog/brooke-cagle-nqmvx8c8njq-unsplash.jpg
-imageAlt: Is Your Detroit Small Business Website Losing Customers? Discover the
-  Top 5 Mistakes You Must Avoid
+imageAlt: Top 4 Detroit Website Mistakes You Must Avoid
 ---
 Your website is your 24/7 salesperson. It is often the first interaction potential customers have with your business. Imagine if that first encounter didn't go as planned. Could it be costing you valuable customers?
 
