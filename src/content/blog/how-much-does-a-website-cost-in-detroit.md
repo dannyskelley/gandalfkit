@@ -41,10 +41,30 @@ If you look on most web design company websites you will not find pricing any wh
 
 # **Website Builder Pricing**
 
-# Wix
+# Wix 
 
 ![](/assets/images/blog/screenshot-2024-06-23-at-3.45.51 pm.png)
+
+### $17 - $158 / month
 
 # Squarespace
 
 ![](/assets/images/blog/screenshot-2024-06-23-at-3.46.30 pm.png)
+
+### $25 - $72 / month
+
+
+
+# Godaddy
+
+![](/assets/images/blog/screenshot-2024-06-23-at-3.48.48 pm.png)
+
+### $22 - $55 / month + Hundreds down + Confusing pricing and hidden fees
+
+
+
+# Weebly
+
+![](/assets/images/blog/screenshot-2024-06-23-at-3.49.45 pm.png)
+
+### $13 - $29 / month
