@@ -11,21 +11,15 @@ imageAlt: Top 4 Detroit Website Mistakes You Must Avoid
 ---
 Your website is your 24/7 salesperson. It is often the first interaction potential customers have with your business. Imagine if that first encounter didn't go as planned. Could it be costing you valuable customers?
 
+###### We are diving into the top 4 mistakes that cause small business websites to lose customers. Fix these 5 mistakes and turn your website into a customer-converting machine!
 
-
-### We are diving into the top 4 mistakes that cause small business websites to lose customers. Fix these 5 mistakes and turn your website into a customer-converting machine!
-
-
-
-#### 1. Mistake One: Lack of Clear Communication
+#### 1. Lack of Clear Communication
 
 Ever visited a website and wondered, "What exactly do they do?" If your website lacks a clear communication you are losing potential customers. Studies show this is the single biggest thing that annoys website users. The thing that makes them leave the most is not being able to tell what your business does. Visitors must understand what you offer and why they should choose you within seconds of landing on your site.
 
 **How to fix Lack of clear communication**
 
 Make sure your homepage clearly states who you are, what you do, and how you can solve your customers' problems. Keep it simple, concise, and compelling! Communicate the value, result, or transformation within 5 seconds in the hero of your website.
-
-
 
 ### 2. Poor User Experience
 
@@ -37,25 +31,15 @@ Picture this: You visit a website, and it takes forever to load. Once it finally
 
 To improve user experience, ensure your website loads quickly, the navigation is simple and information is easy to find. Put yourself in your customers' shoes. Make their journey on your website smooth and enjoyable.
 
-
-
 #### 3. Ignoring Mobile Responsiveness
-
-
 
 Have you ever visited a website on your phone and had to pinch and zoom to read the text or click on a link? Having a website that's not optimized for phones is a huge missed opportunity.
 
-
-
 "I remember trying to browse a local restaurant’s menu on my phone, but the text was so tiny, I could not read it. Eventually, I gave up and went somewhere else."
-
-
 
 **How to fix mobile responsiveness**
 
 Ensure your website is mobile responsive. Meaning it adapts seamlessly to different screen sizes and devices. Test it on various devices to ensure all content is accessible and easy to read and navigate. Your mobile visitors will thank you.
-
-
 
 #### 4. Lack of Clear Call to Action Buttons or Contact Info
 
