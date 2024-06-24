@@ -1,5 +1,5 @@
 ---
-title: Top 4 Detroit Website Design
+title: Top 4 Detroit Website Design Mistakes
 url: Top 4 Detroit Website Design Mistakes
 description: Top 4 Detroit Website Mistakes
 author: gandalf
