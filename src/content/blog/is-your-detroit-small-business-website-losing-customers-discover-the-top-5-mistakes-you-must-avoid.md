@@ -1,5 +1,5 @@
 ---
-title: Top 4 Detroit Website Mistakes You Must Avoid
+title: Top 4 Detroit Website Mistakes to Avoid
 url: Top 4 Detroit Website Mistakes You Must Avoid
 description: Top 4 Detroit Website Mistakes You Must Avoid
 author: gandalf
