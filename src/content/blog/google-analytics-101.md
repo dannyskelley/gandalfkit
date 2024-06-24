@@ -9,9 +9,9 @@ tags:
 image: /assets/images/blog/screenshot-2024-06-24-at-7.44.46 am.png
 imageAlt: Google Analytics 101
 ---
-Users = Unique Visitors
+**Users** = Unique Visitors
 
-Events = Button clicks, downloads, video views, form submissions, etc.
+**Events** = Button clicks, downloads, video views, form submissions, etc.
 
 
 
@@ -19,6 +19,18 @@ Events = Button clicks, downloads, video views, form submissions, etc.
 
 ![](/assets/images/blog/screenshot-2024-06-24-at-7.55.28 am.png)
 
-### Users by City
+### See which cities people live in that are visiting your site
 
 ![](/assets/images/blog/screenshot-2024-06-24-at-7.59.20 am.png)
+
+### See if people are looking for you on their phones or desktop
+
+![](/assets/images/blog/screenshot-2024-06-24-at-8.01.11 am.png)
+
+**View by number of user per device**
+
+![](/assets/images/blog/screenshot-2024-06-24-at-8.01.22 am.png)
+
+**View device by percentage**
+
+![](/assets/images/blog/screenshot-2024-06-24-at-8.01.38 am.png)
