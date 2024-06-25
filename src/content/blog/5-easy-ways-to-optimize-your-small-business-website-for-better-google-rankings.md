@@ -61,13 +61,13 @@ Content is like fuel for your SEO engine. It keeps things running smooth and att
 
 Think about what Detroiters care about or want to learn related to your industry. Are there local events, trends, or tips you can share? Creating blog posts, articles, or videos that address these interests positions you as an expert. It also keeps your website fresh and engaging.
 
-<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/0OIYrwFA7Xw?si=8Zu7e9YxbQVJ6wOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 * Optimize your content by incorporating your chosen keywords naturally.
 * Answer common questions your Detroit audience may have.
 * Provide valuable insights they can't find elsewhere.
 
 The more valuable and shareable your content, the more likely it is to be linked to and shared. This boosts your SEO efforts.
+
+<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/0OIYrwFA7Xw?si=8Zu7e9YxbQVJ6wOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### **5. Technical SEO: Optimizing Behind the Scenes**
 
