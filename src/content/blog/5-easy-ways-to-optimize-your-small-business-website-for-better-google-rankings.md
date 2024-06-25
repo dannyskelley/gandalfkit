@@ -55,7 +55,7 @@ Start by checking if your website is mobile responsive. This means it adapts to 
 
 A smooth mobile experience not only pleases Google but also keeps your Detroit customers happy and engaged.
 
-<iframe tyle="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/D2HZQeqFu6w?si=TvGcuiQNHtY_Cgi3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/D2HZQeqFu6w?si=TvGcuiQNHtY_Cgi3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### **4. Quality Content Creation: Engaging Detroit Audiences**
 
