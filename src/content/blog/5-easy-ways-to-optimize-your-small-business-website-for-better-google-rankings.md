@@ -25,9 +25,15 @@ Start by researching keywords specific to your industry and location. Tools like
 
 If you run a landscaping business in Detroit, keywords like "Detroit landscaping services" or "best landscapers in Detroit" could be game-changers.
 
+Once you've identified your keywords, sprinkle them naturally throughout your website content. Use them in your page titles, headings, and meta descriptions. This tells Google—and potential customers—exactly what your business is all about.
+
+
+
 <iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/zrJ6qOWGPfk?si=ciec0emuk5F17vIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Once you've identified your keywords, sprinkle them naturally throughout your website content. Use them in your page titles, headings, and meta descriptions. This tells Google—and potential customers—exactly what your business is all about.
+
+
+
 
 **2. Local SEO: Putting your Detroit Business on the Map**
 
@@ -35,17 +41,15 @@ Local SEO is like putting up a big neon sign that says, "We're right here in Det
 
 Start by claiming and optimizing your Google My Business (GMB) profile. Fill out every detai.l. Add your address, phone number, business hours, and add some eye-catching photos that showcase your business. Positive reviews from satisfied customers can also give your local SEO a boost.
 
-<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/RN9J8Rpmy-A?si=_LqqmP2knghz-im0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 Next, aim to get listed in local directories and websites specific to Detroit. These citations help Google verify your business's location and legitimacy. Think Yelp, local business associations, or Detroit city directories. The more credible sites that mention your business, the better your chances of ranking higher in local searches.
+
+<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/RN9J8Rpmy-A?si=_LqqmP2knghz-im0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **3. Mobile Friendly Design: Catering to Detroit's On the Go Customers**
 
 We're a city on the move, and your website should keep up. Did you know that a large chunk of searches in Detroit happens on mobile devices? If your website isn't mobile friendly, you could be missing out on a lot of potential customers.
 
 Start by checking if your website is mobile responsive. This means it adapts to different screen sizes and loads fast on smartphones and tablets. Google rewards mobile friendly websites with higher rankings. So optimizing for mobile isn't just good practice it's a smart move for SEO success.
-
-<iframe tyle="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/D2HZQeqFu6w?si=TvGcuiQNHtY_Cgi3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Make sure**
 
@@ -54,6 +58,10 @@ Start by checking if your website is mobile responsive. This means it adapts to 
 * navigation is straightforward
 
 A smooth mobile experience not only pleases Google but also keeps your Detroit customers happy and engaged.
+
+
+
+<iframe tyle="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/D2HZQeqFu6w?si=TvGcuiQNHtY_Cgi3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **4. Quality Content Creation: Engaging Detroit Audiences**
 
@@ -77,12 +85,6 @@ Start by ensuring your website loads fast. Use tools like Google PageSpeed Insig
 
 Next, check for and fix any broken links. Broken links can frustrate visitors and harm your SEO efforts. Keep your site structure clean and organized. Make sure search engines can crawl and index your pages easily.
 
-
-
-<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/AB0VMbvEz7g?si=B4OjRJfi4uILpHGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
 Finally, ensure your website is secure with HTTPS encryption. Google gives preference to secure sites. This is a trust signal for your visitors that their information is safe.
 
 Five easy ways to optimize your small business website for better Google rankings right here in Detroit!
@@ -94,5 +96,13 @@ Five easy ways to optimize your small business website for better Google ranking
 * and technical SEO
 
 you'll be well on your way to climbing the search result rankings. This will attract more local customers.
+
+
+
+
+
+<iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/AB0VMbvEz7g?si=B4OjRJfi4uILpHGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 Remember, SEO is an ongoing effort. Keep monitoring your progress, adapting to changes, and staying ahead of the curve. Have questions or need help? Drop us a line—we're here to help Detroit small businesses thrive online.
