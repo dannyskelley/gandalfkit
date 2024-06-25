@@ -695,7 +695,7 @@
             p {
                 margin: 0;
                 margin-bottom: calc(16 / 16 * 1rem);
-                font-size: calc(16 / 16 * 1rem);
+                font-size: calc(16 / 16 * 1.4rem);
                 line-height: 1.6em;
                 color: var(--bodyTextColor);
             }
@@ -712,9 +712,9 @@
                 padding-left: calc(40 / 16 * 1rem);
 
                 li {
-                    margin-bottom: calc(16 / 16 * 1rem);
+                    margin-bottom: calc(16 / 16 * 1.4rem);
                     list-style: circle;
-                    font-size: calc(16 / 16 * 1rem);
+                    font-size: calc(16 / 16 * 1.4rem);
                     line-height: 1.6em;
                     color: var(--bodyTextColor);
                 }
