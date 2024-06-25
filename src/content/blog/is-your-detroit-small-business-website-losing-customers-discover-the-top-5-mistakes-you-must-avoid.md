@@ -23,7 +23,7 @@ Ever visited a website and wondered, "What exactly do they do?" If your website 
 
 Make sure your homepage clearly states who you are, what you do, and how you can solve your customers' problems. Keep it simple, concise, and compelling! Communicate the value, result, or transformation within 5 seconds in the hero of your website.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WgXU7XAZYmQ?si=Y1Ny-FG3kG3dhQGX&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/WgXU7XAZYmQ?si=Y1Ny-FG3kG3dhQGX&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 2. Poor User Experience
 
@@ -35,7 +35,7 @@ Picture this: You visit a website, and it takes forever to load. Once it finally
 
 To improve user experience, ensure your website loads quickly, the navigation is simple and information is easy to find. Put yourself in your customers' shoes. Make their journey on your website smooth and enjoyable.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N1el1vdTMOg?si=JqK72HV22jRkxe0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/N1el1vdTMOg?si=JqK72HV22jRkxe0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### 3. Ignoring Mobile Responsiveness
 
@@ -47,7 +47,7 @@ Have you ever visited a website on your phone and had to pinch and zoom to read 
 
 Ensure your website is mobile responsive. Meaning it adapts seamlessly to different screen sizes and devices. Test it on various devices to ensure all content is accessible and easy to read and navigate. Your mobile visitors will thank you.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2mNeDVoWO2o?si=blUFP28ZQVQct3xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/2mNeDVoWO2o?si=blUFP28ZQVQct3xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### 4. Lack of Clear Call to Action Buttons or Contact Info
 
@@ -63,7 +63,7 @@ Use actionable language (e.g., "Get Started Today," "Shop Now," "Contact Us") Ma
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BxELmZ-NAq4?si=WCmoY0rVtqlarp63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/BxELmZ-NAq4?si=WCmoY0rVtqlarp63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Your website is a powerful tool for attracting and converting customers. Investing time and effort into optimizing it can yield significant results.**
 
