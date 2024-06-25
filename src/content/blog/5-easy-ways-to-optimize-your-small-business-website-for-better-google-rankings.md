@@ -1,5 +1,5 @@
 ---
-title: 5 Easy Ways to Optimize Your Small Business Website for Better Google Rankings
+title: 5 Ways to Rank on Google
 url: 5 Easy Ways to Optimize Your Small Business Website for Better Google Rankings
 description: 5 Easy Ways to Optimize Your Small Business Website for Better Google Rankings
 author: gandalf
