@@ -47,7 +47,7 @@ Have you ever visited a website on your phone and had to pinch and zoom to read 
 
 Ensure your website is mobile responsive. Meaning it adapts seamlessly to different screen sizes and devices. Test it on various devices to ensure all content is accessible and easy to read and navigate. Your mobile visitors will thank you.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/2mNeDVoWO2o?si=blUFP28ZQVQct3xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin-bottom:100px" width="100%" height="315" src="https://www.youtube.com/embed/2mNeDVoWO2o?si=blUFP28ZQVQct3xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### 4. Lack of Clear Call to Action Buttons or Contact Info
 
