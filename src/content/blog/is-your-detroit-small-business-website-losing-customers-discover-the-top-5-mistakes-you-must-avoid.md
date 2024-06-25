@@ -35,7 +35,7 @@ Picture this: You visit a website, and it takes forever to load. Once it finally
 
 To improve user experience, ensure your website loads quickly, the navigation is simple and information is easy to find. Put yourself in your customers' shoes. Make their journey on your website smooth and enjoyable.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/N1el1vdTMOg?si=JqK72HV22jRkxe0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin-bottom:100px" width="100%" height="315" src="https://www.youtube.com/embed/N1el1vdTMOg?si=JqK72HV22jRkxe0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### 3. Ignoring Mobile Responsiveness
 
@@ -61,9 +61,7 @@ Place prominent call to action buttons throughout your website. Guide visitors t
 
 Use actionable language (e.g., "Get Started Today," "Shop Now," "Contact Us") Make sure call to action buttons stand out visually. Encourage visitors to take the next step with confidence!
 
-
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/BxELmZ-NAq4?si=WCmoY0rVtqlarp63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin-bottom:100px" width="100%" height="315" src="https://www.youtube.com/embed/BxELmZ-NAq4?si=WCmoY0rVtqlarp63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Your website is a powerful tool for attracting and converting customers. Investing time and effort into optimizing it can yield significant results.**
 
