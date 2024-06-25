@@ -29,6 +29,8 @@ Once you've identified your keywords, sprinkle them naturally throughout your we
 
 <iframe style="margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/zrJ6qOWGPfk?si=ciec0emuk5F17vIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+
 ### **2. Local SEO: Putting your Detroit Business on the Map**
 
 Local SEO is like putting up a big neon sign that says, "We're right here in Detroit, ready to serve you!" It's about making sure your business shows up in local searches and on Google Maps. Especially when someone nearby is searching for what you offer.
