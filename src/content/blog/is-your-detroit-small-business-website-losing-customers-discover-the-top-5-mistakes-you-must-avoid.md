@@ -23,7 +23,7 @@ Ever visited a website and wondered, "What exactly do they do?" If your website 
 
 Make sure your homepage clearly states who you are, what you do, and how you can solve your customers' problems. Keep it simple, concise, and compelling! Communicate the value, result, or transformation within 5 seconds in the hero of your website.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/WgXU7XAZYmQ?si=Y1Ny-FG3kG3dhQGX&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style"margin-bottom:100px;" width="100%" height="315" src="https://www.youtube.com/embed/WgXU7XAZYmQ?si=Y1Ny-FG3kG3dhQGX&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 2. Poor User Experience
 
