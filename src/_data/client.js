@@ -9,7 +9,7 @@ module.exports = {
         "city": "Highland Park",
         "state": "MI",
         "zip": "80206",
-        "mapLink": "https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d94266.72398017619!2d-83.1836836625901!3d42.40995579452259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8824cdc288ba2611%3A0x64c31f2e8c195dd1!2sHighland%20Park%2C%20MI%2048203!3m2!1d42.409985299999995!2d-83.1012829!5e0!3m2!1sen!2sus!4v1718394264488!5m2!1sen!2sus"
+        "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11785.43423546062!2d-83.08410521952958!3d42.3988092367797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824cd8b63af9a65%3A0x4b4592ce0b994fd7!2s210%20Rhode%20Island%20St%2C%20Highland%20Park%2C%20MI%2048203!5e0!3m2!1sen!2sus!4v1719425209206!5m2!1sen!2sus"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",

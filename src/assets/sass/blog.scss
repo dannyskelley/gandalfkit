@@ -675,8 +675,9 @@
             }
 
             h3 {
-                margin-bottom: calc(16 / 16 * 1rem);
-                font-size: calc(24 / 16 * 1rem);
+                margin-bottom: calc(16 / 16 * 1.8rem);
+                margin-top:100px;
+                font-size: calc(24 / 16 * 1.8rem);
                 line-height: 1.5em;
                 font-weight: 700;
                 color: var(--headerColor);
