@@ -45,6 +45,8 @@ No clear pricing.  = $$$
 
 ### detroitspaces.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-12.39.49 pm.png)
+
 **Web Development Platform: Wordpress**
 
 Could be in another state or country. Confusing Website.
@@ -52,6 +54,8 @@ Could be in another state or country. Confusing Website.
 No clear pricing. = $$$
 
 ### perfectafternoon.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.40.40 pm.png)
 
 **Web Development Platform: Wordpress**
 
