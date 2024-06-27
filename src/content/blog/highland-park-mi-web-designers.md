@@ -9,11 +9,11 @@ tags:
 image: /assets/images/blog/screenshot-2024-06-27-at-10.11.23 am.png
 imageAlt: Compare Detroit Web Designers
 ---
-### detroitexposure.com
+###### detroitexposure.com
 
 Their website says they are not taking clients. Seems closed.
 
-### karmajack.com
+### Karma Jack
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.25.58 pm.png)
 
@@ -23,7 +23,9 @@ No clear pricing. Pixelated images.
 
 Fancy Office + Lots of employees = $$$
 
-### hexagoncreativedetroit.com
+###### karmajack.com
+
+### Hexagon Creative
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.32.10 pm.png)
 
@@ -33,7 +35,9 @@ No clear pricing. Confusing Website.
 
 Multiple Offices + Lots of employees = $$$
 
-### webdesignsdetroit.com
+###### hexagoncreativedetroit.com
+
+### Web Designs Detroit
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.36.04 pm.png)
 
@@ -42,6 +46,8 @@ Multiple Offices + Lots of employees = $$$
 Seems like a scam since it does not show who you would work with. Could be in another state or country. Confusing Website.
 
 No clear pricing.  = $$$
+
+###### webdesignsdetroit.com
 
 ### detroitspaces.com
 
