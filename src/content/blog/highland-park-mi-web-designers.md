@@ -12,3 +12,15 @@ imageAlt: Highland Park, MI Web Designers
 https://www.detroitexposure.com/
 
 Their website says they are not taking clients. Seems closed.
+
+
+
+https://karmajack.com/
+
+**Wordpress.** No clear pricing. Pixelated images. Office + Lots of employees = $$$
+
+
+
+https://hexagoncreativedetroit.com/
+
+**Wordpress.** No clear pricing. Confusing Website. Multiple Offices + Lots of employees = $$$
