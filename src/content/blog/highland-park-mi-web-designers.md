@@ -109,8 +109,6 @@ Fancy Ferndale office with lots of employees = $$$
 
 ###### verdemedia.com
 
-
-
 ### Detroit Web Design Seo Company
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.47.12 pm.png)
@@ -223,6 +221,8 @@ Multiple offices = $$$
 
 **Web Development Platform: Custom Code. Html + CSS**
 
-Higher score than every other company here Clear pricing. The most affordable website designer in Detroit.
+Higher Google Performance score than every other company here. Clear pricing $50/ month. The most affordable website designer in Detroit.
 
 Home office with one employee = $
+
+Contact us to get started today
