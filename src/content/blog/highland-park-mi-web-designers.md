@@ -123,7 +123,7 @@ No clear pricing = $$$
 
 ###### detroitwebdesignseocompany.com
 
-### hadrout.com
+### hadrout
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.49.20 pm.png)
 
@@ -131,7 +131,9 @@ Slow load times. Multiple offices.
 
 No clear pricing = $$$
 
-### codeparachute.com
+###### hadrout.com
+
+### Code Parachute
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.48.14 pm.png)
 
@@ -141,7 +143,9 @@ Multiple employees. No address. Not sure it is really located here.
 
 No clear pricing = $$$
 
-### anchordbc.com
+###### codeparachute.com
+
+### Anchor
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.54.30 pm.png)
 
@@ -150,6 +154,8 @@ No clear pricing = $$$
 Uses DIY site builders but has national clients.
 
 No clear pricing = $$$
+
+###### anchordbc.com
 
 ### bmgmediaco.com
 
