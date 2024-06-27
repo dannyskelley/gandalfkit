@@ -36,3 +36,27 @@ Multiple Offices + Lots of employees = $$$
 **Wordpress.** Seems like a scam. No clear pricing. Confusing Website.
 
 Could be in another state or country = $$$
+
+
+
+### detroitspaces.com
+
+**Wordpress.** Seems like a scam. No clear pricing. Confusing Website.
+
+Could be in another state or country = $$$
+
+
+
+### perfectafternoon.com
+
+**Wordpress.** No clear pricing. 
+
+Fancy Office + Lots of employees = $$$
+
+
+
+### rightkeysolutions.com
+
+**Wordpress.** No clear pricing. Seems like a scam.
+
+Fancy Office? + Lots of employees = $$$
