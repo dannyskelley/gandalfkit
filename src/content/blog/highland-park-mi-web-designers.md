@@ -215,7 +215,7 @@ Multiple offices = $$$
 
 ###### brownboxbranding.com
 
-### designgandalf.com
+### Gandalf
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.33.54 pm.png)
 
