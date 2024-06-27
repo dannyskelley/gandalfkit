@@ -123,6 +123,8 @@ No clear pricing = $$$
 
 ### anchordbc.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-12.54.30 pm.png)
+
 **Web Development Platform: WIX**
 
 Uses DIY site builders but has national clients.
@@ -130,6 +132,8 @@ Uses DIY site builders but has national clients.
 No clear pricing = $$$
 
 ### bmgmediaco.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.55.55 pm.png)
 
 **Web Development Platform: Wordpress**
 
