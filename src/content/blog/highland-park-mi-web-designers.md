@@ -143,6 +143,8 @@ No clear pricing = $$$
 
 ### majesticwebdesign.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-1.01.21 pm.png)
+
 **Web Development Platform: Wordpress**
 
 Seems like a scam
@@ -150,6 +152,8 @@ Seems like a scam
 No clear pricing = $$$
 
 ### devhun.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-1.02.26 pm.png)
 
 **Web Development Platform: WIX**
 
