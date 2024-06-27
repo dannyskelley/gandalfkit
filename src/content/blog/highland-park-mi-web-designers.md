@@ -105,11 +105,15 @@ No clear pricing = $$$
 
 ### hadrout.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-12.49.20 pm.png)
+
 Slow load times. Multiple offices.
 
 No clear pricing = $$$
 
 ### codeparachute.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.48.14 pm.png)
 
 **Web Development Platform: Wordpress**
 
