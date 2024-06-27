@@ -177,8 +177,6 @@ Multiple offices = $$$
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.33.54 pm.png)
 
-![](/assets/images/blog/screenshot-2024-06-27-at-12.23.16 pm.png)
-
 **Web Development Platform: Custom Code. Html + CSS**
 
 Higher score than every other company here Clear pricing. The most affordable website designer in Detroit.
