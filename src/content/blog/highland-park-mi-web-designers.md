@@ -17,7 +17,9 @@ Their website says they are not taking clients. Seems closed.
 
 ### karmajack.com
 
-**Wordpress.** No clear pricing. Pixelated images.
+**Web Development Platform:  Wordpress**
+
+No clear pricing. Pixelated images.
 
 Fancy Office + Lots of employees = $$$
 
@@ -25,7 +27,9 @@ Fancy Office + Lots of employees = $$$
 
 ### hexagoncreativedetroit.com
 
-**Wordpress.** No clear pricing. Confusing Website.
+**Web Development Platform: Wordpress**
+
+No clear pricing. Confusing Website.
 
 Multiple Offices + Lots of employees = $$$
 
@@ -33,23 +37,29 @@ Multiple Offices + Lots of employees = $$$
 
 ### webdesignsdetroit.com
 
-**Wordpress.** Seems like a scam. No clear pricing. Confusing Website.
+**Web Development Platform: Wordpress**
 
-Could be in another state or country = $$$
+Seems like a scam since it does not show who you would work with. Could be in another state or country. Confusing Website.
+
+No clear pricing.  = $$$
 
 
 
 ### detroitspaces.com
 
-**Wordpress.** Seems like a scam. No clear pricing. Confusing Website.
+**Web Development Platform: Wordpress**
 
-Could be in another state or country = $$$
+Could be in another state or country. Could be in another state or country. Confusing Website.
+
+No clear pricing. = $$$
 
 
 
 ### perfectafternoon.com
 
-**Wordpress.** No clear pricing. 
+**Web Development Platform: Wordpress**
+
+No clear pricing. 
 
 Fancy Office + Lots of employees = $$$
 
@@ -68,3 +78,21 @@ Fancy Office? + Lots of employees = $$$
 **Wordpress.** No clear pricing.
 
 Multiple offices = $$$
+
+
+
+### verdemedia.com
+
+**Wordpress.** No clear pricing.
+
+Fancy Ferndale office with lots of employees = $$$
+
+
+
+### detroitwebdesignseocompany.com
+
+**Web Development Platform: Wordpress.**
+
+Seems like a scam since it does not show who you would work with.
+
+No clear pricing = $$$
