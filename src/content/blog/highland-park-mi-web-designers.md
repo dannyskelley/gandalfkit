@@ -49,7 +49,7 @@ No clear pricing.  = $$$
 
 **Web Development Platform: Wordpress**
 
-Could be in another state or country. Could be in another state or country. Confusing Website.
+Could be in another state or country. Confusing Website.
 
 No clear pricing. = $$$
 
@@ -67,7 +67,9 @@ Fancy Office + Lots of employees = $$$
 
 ### rightkeysolutions.com
 
-**Wordpress.** No clear pricing. Seems like a scam.
+**Web Development Platform: Wordpress**
+
+No clear pricing. Seems like a scam.
 
 Fancy Office? + Lots of employees = $$$
 
@@ -75,7 +77,9 @@ Fancy Office? + Lots of employees = $$$
 
 ### ralphwalkerdesigns.com
 
-**Wordpress.** No clear pricing.
+**Web Development Platform: Wordpress**
+
+No clear pricing
 
 Multiple offices = $$$
 
@@ -83,7 +87,9 @@ Multiple offices = $$$
 
 ### verdemedia.com
 
-**Wordpress.** No clear pricing.
+**Web Development Platform: Wordpress**
+
+No clear pricing.
 
 Fancy Ferndale office with lots of employees = $$$
 
@@ -127,7 +133,7 @@ No clear pricing = $$$
 
 
 
-bmgmediaco.com
+### bmgmediaco.com
 
 **Web Development Platform: Wordpress**
 
