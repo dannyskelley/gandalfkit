@@ -25,7 +25,7 @@ Fancy Office + Lots of employees = $$$
 
 ### hexagoncreativedetroit.com
 
-![](/assets/images/blog/screenshot-2024-06-27-at-12.23.16 pm.png)
+![](/assets/images/blog/screenshot-2024-06-27-at-12.32.10 pm.png)
 
 **Web Development Platform: Wordpress**
 
@@ -136,6 +136,8 @@ No address. Doesn't seem to be in Detroit. Could be a scam.
 No clear pricing = $$$
 
 ### formcode.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.23.16 pm.png)
 
 **Web Development Platform: Wordpress**
 
