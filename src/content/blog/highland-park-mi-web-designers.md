@@ -65,6 +65,8 @@ Fancy Office + Lots of employees = $$$
 
 ### rightkeysolutions.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-12.42.43 pm.png)
+
 **Web Development Platform: Wordpress**
 
 No clear pricing. Seems like a scam.
@@ -72,6 +74,8 @@ No clear pricing. Seems like a scam.
 Fancy Office? + Lots of employees = $$$
 
 ### ralphwalkerdesigns.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.44.48 pm.png)
 
 **Web Development Platform: Wordpress**
 
@@ -81,6 +85,8 @@ Multiple offices = $$$
 
 ### verdemedia.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-12.45.44 pm.png)
+
 **Web Development Platform: Wordpress**
 
 No clear pricing.
@@ -88,6 +94,8 @@ No clear pricing.
 Fancy Ferndale office with lots of employees = $$$
 
 ### detroitwebdesignseocompany.com
+
+![]()
 
 **Web Development Platform: Wordpress**
 
