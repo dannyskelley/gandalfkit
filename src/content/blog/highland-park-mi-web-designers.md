@@ -49,7 +49,7 @@ No clear pricing.  = $$$
 
 ###### webdesignsdetroit.com
 
-### detroitspaces.com
+### Detroit Spaces
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.39.49 pm.png)
 
@@ -59,7 +59,9 @@ Could be in another state or country. Confusing Website.
 
 No clear pricing. = $$$
 
-### perfectafternoon.com
+###### detroitspaces.com
+
+### Perfect Afternoon
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.40.40 pm.png)
 
@@ -69,7 +71,9 @@ No clear pricing.
 
 Fancy Office + Lots of employees = $$$
 
-### rightkeysolutions.com
+###### perfectafternoon.com
+
+### Right Key Solutions
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.42.43 pm.png)
 
@@ -79,7 +83,9 @@ No clear pricing. Seems like a scam.
 
 Fancy Office? + Lots of employees = $$$
 
-### ralphwalkerdesigns.com
+###### Rightkeysolutions.com
+
+### Ralph Walker Designs
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.44.48 pm.png)
 
@@ -89,7 +95,9 @@ No clear pricing
 
 Multiple offices = $$$
 
-### verdemedia.com
+###### ralphwalkerdesigns.com
+
+### Verde Media
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.45.44 pm.png)
 
@@ -99,7 +107,11 @@ No clear pricing.
 
 Fancy Ferndale office with lots of employees = $$$
 
-### detroitwebdesignseocompany.com
+###### verdemedia.com
+
+
+
+### Detroit Web Design Seo Company
 
 ![]()
 
@@ -108,6 +120,8 @@ Fancy Ferndale office with lots of employees = $$$
 Seems like a scam since it does not show who you would work with.
 
 No clear pricing = $$$
+
+###### detroitwebdesignseocompany.com
 
 ### hadrout.com
 
@@ -177,7 +191,17 @@ Loads slow. No clear pricing.
 
 Multiple offices = $$$
 
+### Brown box branding
 
+![](/assets/images/blog/screenshot-2024-06-27-at-1.13.45 pm.png)
+
+**Web Development Platform: Wordpress**
+
+Loads slow. No clear pricing.
+
+Multiple offices = $$$
+
+###### brownboxbranding.com
 
 ### designgandalf.com
 
