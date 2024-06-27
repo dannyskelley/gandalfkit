@@ -91,8 +91,36 @@ Fancy Ferndale office with lots of employees = $$$
 
 ### detroitwebdesignseocompany.com
 
-**Web Development Platform: Wordpress.**
+**Web Development Platform: Wordpress**
 
 Seems like a scam since it does not show who you would work with.
+
+No clear pricing = $$$
+
+
+
+### hadrout.com
+
+Slow load times. Multiple offices.
+
+No clear pricing = $$$
+
+
+
+### codeparachute.com
+
+**Web Development Platform: Wordpress**
+
+Multiple employees. No address. Not sure it is really located here.
+
+No clear pricing = $$$
+
+
+
+### anchordbc.com
+
+**Web Development Platform: WIX**
+
+Uses DIY site builders but has national clients.
 
 No clear pricing = $$$
