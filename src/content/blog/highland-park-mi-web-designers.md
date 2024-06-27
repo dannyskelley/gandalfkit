@@ -9,13 +9,13 @@ tags:
 image: /assets/images/blog/screenshot-2024-06-27-at-10.11.23 am.png
 imageAlt: Highland Park, MI Web Designers
 ---
-https://www.detroitexposure.com/
+### detroitexposure.com
 
 Their website says they are not taking clients. Seems closed.
 
 
 
-https://karmajack.com/
+### karmajack.com
 
 **Wordpress.** No clear pricing. Pixelated images.
 
@@ -23,7 +23,7 @@ Fancy Office + Lots of employees = $$$
 
 
 
-https://hexagoncreativedetroit.com/
+### hexagoncreativedetroit.com
 
 **Wordpress.** No clear pricing. Confusing Website.
 
@@ -31,7 +31,7 @@ Multiple Offices + Lots of employees = $$$
 
 
 
-https://webdesignsdetroit.com/
+### webdesignsdetroit.com
 
 **Wordpress.** Seems like a scam. No clear pricing. Confusing Website.
 
