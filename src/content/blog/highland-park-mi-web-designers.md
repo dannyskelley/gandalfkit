@@ -17,10 +17,22 @@ Their website says they are not taking clients. Seems closed.
 
 https://karmajack.com/
 
-**Wordpress.** No clear pricing. Pixelated images. Office + Lots of employees = $$$
+**Wordpress.** No clear pricing. Pixelated images.
+
+Fancy Office + Lots of employees = $$$
 
 
 
 https://hexagoncreativedetroit.com/
 
-**Wordpress.** No clear pricing. Confusing Website. Multiple Offices + Lots of employees = $$$
+**Wordpress.** No clear pricing. Confusing Website.
+
+Multiple Offices + Lots of employees = $$$
+
+
+
+https://webdesignsdetroit.com/
+
+**Wordpress.** Seems like a scam. No clear pricing. Confusing Website.
+
+Could be in another state or country = $$$
