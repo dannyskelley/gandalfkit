@@ -35,6 +35,8 @@ Multiple Offices + Lots of employees = $$$
 
 ### webdesignsdetroit.com
 
+![](/assets/images/blog/screenshot-2024-06-27-at-12.36.04 pm.png)
+
 **Web Development Platform: Wordpress**
 
 Seems like a scam since it does not show who you would work with. Could be in another state or country. Confusing Website.
