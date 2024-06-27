@@ -113,7 +113,7 @@ Fancy Ferndale office with lots of employees = $$$
 
 ### Detroit Web Design Seo Company
 
-![]()
+![](/assets/images/blog/screenshot-2024-06-27-at-12.47.12 pm.png)
 
 **Web Development Platform: Wordpress**
 
@@ -123,7 +123,7 @@ No clear pricing = $$$
 
 ###### detroitwebdesignseocompany.com
 
-### hadrout
+### Hadrout
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.49.20 pm.png)
 
@@ -157,7 +157,7 @@ No clear pricing = $$$
 
 ###### anchordbc.com
 
-### bmgmediaco.com
+### BMG Media
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.55.55 pm.png)
 
@@ -167,7 +167,9 @@ Multiple fancy offices + lots of employees
 
 No clear pricing = $$$
 
-### majesticwebdesign.com
+###### bmgmediaco.com
+
+### Majestic Web Design
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-1.01.21 pm.png)
 
@@ -177,7 +179,9 @@ Seems like a scam
 
 No clear pricing = $$$
 
-### devhun.com
+###### majesticwebdesign.com
+
+### Devhun
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-1.02.26 pm.png)
 
@@ -187,7 +191,9 @@ No address. Doesn't seem to be in Detroit. Could be a scam.
 
 No clear pricing = $$$
 
-### formcode.com
+###### devhun.com
+
+### Form code
 
 ![](/assets/images/blog/screenshot-2024-06-27-at-12.23.16 pm.png)
 
@@ -196,6 +202,8 @@ No clear pricing = $$$
 Loads slow. No clear pricing.
 
 Multiple offices = $$$
+
+###### formcode.com
 
 ### Brown box branding
 
