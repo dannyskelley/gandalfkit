@@ -1,19 +1,21 @@
 ---
-title: Highland Park, MI Web Designers
-url: Highland Park, MI Web Designers
-description: Highland Park, MI Web Designers
+title: Compare Detroit Web Designers
+url: Compare Detroit Web Designers
+description: Compare Detroit Web Designers
 author: gandalf
 date: 2024-06-27T10:12:00.000Z
 tags:
   - post
 image: /assets/images/blog/screenshot-2024-06-27-at-10.11.23 am.png
-imageAlt: Highland Park, MI Web Designers
+imageAlt: Compare Detroit Web Designers
 ---
 ### detroitexposure.com
 
 Their website says they are not taking clients. Seems closed.
 
 ### karmajack.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.25.58 pm.png)
 
 **Web Development Platform:  Wordpress**
 
@@ -22,6 +24,8 @@ No clear pricing. Pixelated images.
 Fancy Office + Lots of employees = $$$
 
 ### hexagoncreativedetroit.com
+
+![](/assets/images/blog/screenshot-2024-06-27-at-12.23.16 pm.png)
 
 **Web Development Platform: Wordpress**
 
@@ -115,8 +119,6 @@ Multiple fancy offices + lots of employees
 
 No clear pricing = $$$
 
-
-
 ### majesticwebdesign.com
 
 **Web Development Platform: Wordpress**
@@ -125,8 +127,6 @@ Seems like a scam
 
 No clear pricing = $$$
 
-
-
 ### devhun.com
 
 **Web Development Platform: WIX**
@@ -134,8 +134,6 @@ No clear pricing = $$$
 No address. Doesn't seem to be in Detroit. Could be a scam.
 
 No clear pricing = $$$
-
-
 
 ### formcode.com
 
