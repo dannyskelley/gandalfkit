@@ -71,11 +71,15 @@ https://app.brandmark.io/v3/
 
 [codestitch.app/font-pair-guide#why-google-fonts](https://codestitch.app/font-pair-guide#why-google-fonts)
 
+[femmebot.github.io/google-type](https://femmebot.github.io/google-type/)
+
 [gwfh.mranftl.com/fonts](https://gwfh.mranftl.com/fonts)
 
 [shapedivider.app](https://www.shapedivider.app/)
 
 [coolors.co/palettes/trending](https://coolors.co/palettes/trending)
+
+[](https://coolors.co/palettes/trending)
 
 ### Icons
 
@@ -92,6 +96,12 @@ https://app.brandmark.io/v3/
 [icons8.com/illustrations](< icons8.com/illustrations>)
 
 [iconscout.com](https://iconscout.com/)
+
+
+
+### [](https://iconscout.com/)SVGS
+
+[femmebot.github.io/Gutenberg-SVG](http://femmebot.github.io/Gutenberg-SVG/)
 
 [](https://fonts.google.com/icons)
 
