@@ -1,5 +1,5 @@
 ---
-title: Analyze competitor keywords for free
+title: Analyze competitor keywords for free with SEMrush
 url: Step by step guide on how to use SEMrush to analyze competitor keywords for
   free
 description: Step by step guide on how to use SEMrush to analyze competitor
