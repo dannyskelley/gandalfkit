@@ -15,6 +15,13 @@ Ranking your business website quickly on Google requires a strategic approach fo
 
 Identify relevant keywords that potential clients might use to find web design services. Use tools like [Google Keyword Planner](https://designgandalf.com/blog/guide-to-using-google-keyword-planner-for-your-new-business-in-detroit/), [Ahrefs](https://designgandalf.com/blog/use-ahrefs-for-free-to-grow-your-business/), [SEMrush](https://designgandalf.com/blog/step-by-step-guide-on-how-to-use-semrush-to-analyze-competitor-keywords-for-free/), or [Ubersuggest](https://designgandalf.com/blog/step-by-step-guide-on-how-to-use-ubersuggest-for-free-to-improve-your-website's-seo/) to discover keywords with reasonable search volume and competition.
 
+Step by step Guides created by Gandalf:
+
+* [Google Keyword Planner Step by Step](https://designgandalf.com/blog/guide-to-using-google-keyword-planner-for-your-new-business-in-detroit/)
+* [](https://designgandalf.com/blog/guide-to-using-google-keyword-planner-for-your-new-business-in-detroit/)[Ahrefs Step by Step - Use ahrefs for free to grow your Detroit business](https://designgandalf.com/blog/use-ahrefs-for-free-to-grow-your-business/)
+* [SEMrush Step by Step - Use semrush to analyze competitor keywords for free](https://designgandalf.com/blog/use-ahrefs-for-free-to-grow-your-business/)
+* [Ubersuggest Step by Step - Use ubersuggest for free to improve your website's Google ranking](https://designgandalf.com/blog/use-ahrefs-for-free-to-grow-your-business/)
+
 ### 2. On-Page SEO Optimization:
 
 \- Meta Tags: Ensure your title tags and meta descriptions include relevant keywords and are enticing to click on.
