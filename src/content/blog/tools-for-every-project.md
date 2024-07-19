@@ -11,11 +11,11 @@ imageAlt: Tools for every web design project
 ---
 ## Logos
 
-https://www.canva.com/create/logos/
+[canva.com/create/logos/](https://www.canva.com/create/logos/)
 
-https://namelix.com/
+[namelix.com](https://namelix.com/)
 
-https://app.brandmark.io/v3/
+[app.brandmark.io/v3/](https://app.brandmark.io/v3/)
 
 ## Print[](https://trello.com)
 
@@ -96,8 +96,6 @@ https://app.brandmark.io/v3/
 [icons8.com/illustrations](https://icons8.com/illustrations)
 
 [iconscout.com](https://iconscout.com/)
-
-
 
 ### [](https://iconscout.com/)SVGS
 
