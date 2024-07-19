@@ -55,7 +55,7 @@ https://app.brandmark.io/v3/
 
 [github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS](https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS)
 
-[netlify.com](netlify.com)
+[netlify.com](https://netlify.com)
 
 [](https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS)[webflow.com](https://webflow.com/)
 
@@ -87,13 +87,13 @@ https://app.brandmark.io/v3/
 
 [svgrepo.com](https://www.svgrepo.com/)
 
-[thenounproject.com](thenounproject.com)
+[thenounproject.com](https://thenounproject.com)
 
 [streamlinehq.com](https://www.streamlinehq.com/freebies)
 
 [fonts.google.com/icons](https://fonts.google.com/icons)
 
-[icons8.com/illustrations](< icons8.com/illustrations>)
+[icons8.com/illustrations](https://icons8.com/illustrations)
 
 [iconscout.com](https://iconscout.com/)
 
@@ -119,7 +119,7 @@ https://app.brandmark.io/v3/
 
 ## Accept Payment & Scheduling
 
-[stripe.com](stripe.com)
+[stripe.com](https://stripe.com)
 
 [cal.com](https://cal.com/)
 
@@ -127,10 +127,8 @@ https://app.brandmark.io/v3/
 
 ## Get Domain Name
 
-[](https://trello.com)[namesilo.com](https://www.namesilo.com/)
+[trello](https://trello.com)
+
+[namesilo.com](https://www.namesilo.com/)
 
 [porkbun.com](https://porkbun.com)
-
-[](https://trello.com)
-
-[](https://trello.com)
