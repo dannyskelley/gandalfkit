@@ -1,13 +1,13 @@
 ---
 title: 3 Free Tools to Supercharge Your Website
-url: "Title: Top 3 Free Tools to Supercharge Your Small Business Website"
-description: "Title: Top 3 Free Tools to Supercharge Your Small Business Website"
+url: Top 3 Free Tools to Supercharge Your Small Business Website
+description: Top 3 Free Tools to Supercharge Your Small Business Website
 author: Gandalf
 date: 2024-06-25T16:59:00.000Z
 tags:
   - post
 image: /assets/images/blog/kaleidico-3v8xo5gbusk-unsplash.jpg
-imageAlt: "Title: Top 3 Free Tools to Supercharge Your Small Business Website"
+imageAlt: Top 3 Free Tools to Supercharge Your Small Business Website
 ---
 Having a strong online presence is key to reaching your audience and standing out. You don't need a huge budget to create a website that attracts customers and drives growth. There are three free tools that can supercharge your small business website.
 
