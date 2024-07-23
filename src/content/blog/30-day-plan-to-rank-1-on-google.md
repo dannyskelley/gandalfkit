@@ -1,15 +1,15 @@
 ---
-title: "30 Day Plan to Rank #1 on Google"
-url: "30-Day Plan to Rank #1 on Google in Detroit: A Friendly Guide for Small
-  Business Owners"
-description: "30-Day Plan to Rank #1 on Google in Detroit: A Friendly Guide for
-  Small Business Owners"
+title: 30 Day Plan to Rank 1st on Google
+url: 30-Day Plan to Rank 1st on Google in Detroit A Friendly Guide for Small
+  Business Owners
+description: 30-Day Plan to Rank 1st on Google in Detroit A Friendly Guide for
+  Small Business Owners
 author: gandalf
 date: 2024-06-26T14:41:00.000Z
 tags:
   - post
 image: /assets/images/blog/arkan-perdana-ektlh4_u7ao-unsplash.jpg
-imageAlt: "30-Day Plan to Rank #1 on Google in Detroit: A Friendly Guide for
+imageAlt: "30-Day Plan to Rank #1 on Google in Detroit A Friendly Guide for
   Small Business Owners"
 ---
 If you're eager to boost your online presence and attract more local customers, getting your website to rank #1 on Google for key search terms like "Detroit best (your service)" can be a game changer. I'm excited to share a step by step plan you achieve that coveted top spot using free tools!
