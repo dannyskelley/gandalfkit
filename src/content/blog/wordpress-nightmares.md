@@ -1,6 +1,6 @@
 ---
 title: WordPress Nightmares
-url: "WordPress Nightmares: 5 Issues That Could Ruin Your Website"
+url: WordPress Nightmares 5 Issues That Could Ruin Your Website
 description: "WordPress Nightmares: 5 Issues That Could Ruin Your Website"
 author: gandalf
 date: 2024-06-27T11:31:00.000Z
