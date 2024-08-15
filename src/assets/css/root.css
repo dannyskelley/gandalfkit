@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
   }
   :root {
-    --primary: red;
+    --primary: #e40001;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
