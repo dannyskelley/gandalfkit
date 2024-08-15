@@ -2,32 +2,32 @@
 <!--                   Steps                      -->
 <!-- ============================================ -->
 
-
 <style>
-    /*-- -------------------------- -->
+  /*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps-584 .cs-button-solid {           
-            border-radius: 999px;
-            display: block;
-            background-color:black;
-       
-            color:white;
-        }
-
-        #steps-584 .cs-button-solid:hover {           
-            color:black;
-        }
-  #steps-584 {
+  #steps-2014 {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    overflow: hidden;
+    position: relative;
   }
-  #steps-584 .cs-container {
+  #steps-2014::before {
+    content: "";
     width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375rem;
+    height: 100%;
+    background-color: #fff;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #steps-2014 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -35,131 +35,190 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #steps-584 .cs-content {
+  #steps-2014 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
   }
-  #steps-584 .cs-title {
-    color: var(--bodyTextColorWhite);
+  #steps-2014 .cs-text {
+    max-width: 56.25rem;
   }
-  #steps-584 .cs-card-group {
+  #steps-2014 .cs-card-group {
+    width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+    position: relative;
   }
-  #steps-584 .cs-item {
+  #steps-2014 .cs-item {
+    text-align: left;
     list-style: none;
-    min-height: 18.125rem;
-    /* 16px - 24px left & right */
-    padding: 1rem clamp(1rem, 1.8vw, 1.5rem);
-    border-bottom: 1px solid var(--bodyTextColorWhite);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
+    width: 100%;
+    /* 16px - 32px */
+    padding: clamp(1.5rem, 3.1vw, 2rem) clamp(1rem, 2.3vw, 2rem);
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    grid-column: span 12;
+    position: relative;
+    transition: border 0.3s;
   }
-  #steps-584 .cs-item:last-of-type {
-    border: none;
+  #steps-2014 .cs-item:hover {
+    border: 1px solid var(--primary);
   }
-  #steps-584 .cs-h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
+  #steps-2014 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #steps-2014 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
     line-height: 1.2em;
     text-align: left;
-    margin: 0 0 0.75rem 0;
-    color: var(--bodyTextColorWhite);
-    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
   }
-  #steps-584 .cs-item-text {
+  #steps-2014 .cs-item-text {
     font-size: 1rem;
     line-height: 1.5em;
-    text-align: left;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
+    text-align: inherit;
+    margin: 0 0 1.5rem 0;
+    color: var(--bodyTextColor);
   }
-  #steps-584 .cs-number {
-    font-size: 3.8125rem;
-    font-weight: 900;
-    line-height: 1.2em;
-    /* auto pushes against other elements in a flexbox, this one forces it to be at the bottom of the flexbox */
-    margin: auto 0 0 0;
-    color: var(--bodyTextColorWhite);
+  #steps-2014 .cs-number-wrapper {
+    width: 3rem;
+    height: 3rem;
+    margin-top: auto;
+    margin-bottom: -1.5rem;
+    padding: 0.625rem;
+    background-color: var(--headerColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  #steps-2014 .cs-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  #steps-2014 .cs-picture {
+    width: 100%;
+    height: 11.25rem;
     display: block;
+    flex: none;
   }
+  #steps-2014 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #steps-584 .cs-container {
+  #steps-2014 .cs-container {
     max-width: 80rem;
   }
-  #steps-584 .cs-card-group {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #steps-584 .cs-item {
-    width: 48%;
-  }
-  #steps-584 .cs-item:nth-of-type(3) {
-    border-bottom: none;
+  #steps-2014 .cs-item {
+    grid-column: span 4;
   }
 }
 /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #steps-584 .cs-card-group {
-    flex-wrap: nowrap;
+@media only screen and (min-width: 75rem) {
+  #steps-2014 .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
   }
-  #steps-584 .cs-item {
-    border-bottom: none;
-    border-right: 1px solid var(--bodyTextColorWhite);
+  #steps-2014 .cs-content {
+    text-align: left;
+    /* 221x - 305px */
+    
+    align-items: flex-start;
   }
 }
                                 
 </style>
 
-<section id="steps-584">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Process</span>
-            <h2 class="cs-title">Simple easy steps to get started</h2>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-              <span class="cs-number" data-aos="fade-up">1</span>
-                <h3 class="cs-h3">Start Today</h3>
-                <p class="cs-item-text">
-                  Sign up for a monthly plan or fill out our contact form to start today.
-                          
-                </p>
-                
-            </li>
-            <li class="cs-item">
-              <span class="cs-number" data-aos="fade-up" data-aos="fade-up">2</span>
-                <h3 class="cs-h3">Work Together</h3>
-                <p class="cs-item-text">
-                  We’ll work together to understand your business and clarify your message. Confused  visitors  will not buy.
-                </p>
-                
-            </li>
-            <li class="cs-item">
-              <span class="cs-number" data-aos="fade-up">3</span>
-                <h3 class="cs-h3">Launch</h3>
-                <p class="cs-item-text">
-                    We launch your website and make sure that you are 100% happy. We can launch your site in as little as 1 day.
-                </p>
-                
-            </li>
+<section id="steps-2014">
+  <div class="cs-container">
+    <div class="cs-content">
+        <span class="cs-topper">Get Started</span>
+        <h2 class="cs-title">How It Works</h2>
 
-        </ul>
-
-        <a style="margin-top: 0px;" href="/contact" class="cs-button-solid">Get in touch</a>
     </div>
+    </div>
+  <div class="cs-container">
+
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <h3 class="cs-h3">Get in touch</h3>
+              <p class="cs-item-text">
+                  Call or Text 313.801.7388 or email info@designgandalf.com
+              </p>
+              <div class="cs-number-wrapper">
+                  <span class="cs-number">01</span>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/calendar.jpg">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/calendar.jpg">
+                  <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/calendar.jpg" alt="number" width="48" height="48">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <h3 class="cs-h3">Design & Launch</h3>
+              <p class="cs-item-text">
+                  We do all the hard work to design and develop a custom effectice website for you, so you can you focus on your business
+              </p>
+              <div class="cs-number-wrapper">
+                  <span class="cs-number">02</span>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="/assets/images/step2.jpg">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="/assets/images/step2.jpg">
+                  <img loading="lazy" decoding="async" src="/assets/images/step2.jpg" alt="number" width="48" height="48">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <h3 class="cs-h3">Monitor Growth</h3>
+              <p class="cs-item-text">
+                Get direct, personalized support whenever you need it, ensuring your website performs at its best.
+              </p>
+              <div class="cs-number-wrapper">
+                  <span class="cs-number">03</span>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="/assets/images/home3.jpg">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="/assets/images/home3.jpg">
+                  <img loading="lazy" decoding="async" src="/assets/images/home3.jpg" alt="number" width="48" height="48">
+              </picture>
+          </li>
+      </ul>
+      
+  </div>
+
+  <div style="text-align: center; margin-top: 100px;">
+    {% include 'components/ctabutton.html' %}
+        
+  </div>
 </section>
-                                
+                              
