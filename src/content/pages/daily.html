@@ -4,348 +4,179 @@ description: 'We appreciate your feedback'
 permalink: 'daily/'
 eleventyNavigation:
 
+
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level-Based Game</title>
+    <title>Skull Crusher</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            overflow: hidden;
+            padding: 0;
             background-color: #000; /* Black background */
+            overflow: hidden;
+            touch-action: none; /* Disable default touch actions */
         }
-        canvas {
-            display: block;
-            image-rendering: -webkit-optimize-contrast; /* Crisp rendering */
+
+        #game-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #333; /* Dark grey background */
+            overflow: hidden;
+        }
+
+        #character {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: #fff; /* White character */
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .skull {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #fff; /* White skull */
+            border-radius: 50%;
+            background-image: url('https://img.icons8.com/ios-filled/50/ffffff/skull.png'); /* White skull icon */
+            background-size: cover;
+        }
+
+        #log {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: #fff; /* White text */
+            text-shadow: 1px 1px 2px #000; /* Black shadow for better readability */
         }
     </style>
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
+    <div id="game-container">
+        <div id="character"></div>
+        <div id="log">Swipe left or right to crush skulls!</div>
+    </div>
 
     <script>
-        const canvas = document.getElementById('gameCanvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        // Game variables
-        const gravity = 0.6;
-        const friction = 0.9;
-        const player = {
-            x: 100,
-            y: canvas.height - 70,
-            width: 40,
-            height: 40,
-            speedX: 0,
-            speedY: 0,
-            jumpPower: -15,
-            isJumping: false,
-            jumpCount: 0,
-            maxJumps: 3,
-            shooting: false,
-            bullets: [],
-            shootCooldown: 0
-        };
-        const keys = {
-            right: false,
-            left: false,
-            shoot: false
-        };
-        let ground = { x: 0, y: canvas.height - 50, width: canvas.width, height: 50 };
-        let platforms = [];
-        let collectibles = [];
-        let enemies = [];
+        let startX = 0;
+        let endX = 0;
+        const character = document.getElementById('character');
+        const log = document.getElementById('log');
+        const swipeThreshold = 50; // Minimum distance for a swipe
+        const gameContainer = document.getElementById('game-container');
+        let skulls = [];
         let score = 0;
-        let level = 0;
-        const levelData = [
-            {
-                platforms: [
-                    { x: 50, y: canvas.height - 150, width: 100, height: 20 },
-                    { x: 200, y: canvas.height - 250, width: 100, height: 20 },
-                    { x: 350, y: canvas.height - 350, width: 100, height: 20 }
-                ],
-                collectibles: 5,
-                enemies: 2
-            },
-            {
-                platforms: [
-                    { x: 30, y: canvas.height - 100, width: 150, height: 20 },
-                    { x: 200, y: canvas.height - 200, width: 150, height: 20 },
-                    { x: 400, y: canvas.height - 300, width: 150, height: 20 },
-                    { x: 600, y: canvas.height - 400, width: 150, height: 20 }
-                ],
-                collectibles: 7,
-                enemies: 3
-            },
-            {
-                platforms: [
-                    { x: 20, y: canvas.height - 100, width: 200, height: 20 },
-                    { x: 250, y: canvas.height - 200, width: 200, height: 20 },
-                    { x: 500, y: canvas.height - 300, width: 200, height: 20 },
-                    { x: 750, y: canvas.height - 400, width: 200, height: 20 }
-                ],
-                collectibles: 10,
-                enemies: 5
-            }
-        ];
 
-        // Web Audio API
-        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-
-        function playSound(frequency, duration) {
-            const oscillator = audioContext.createOscillator();
-            oscillator.type = 'square';
-            oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
-            oscillator.connect(audioContext.destination);
-            oscillator.start();
-            setTimeout(() => oscillator.stop(), duration);
+        function handleTouchStart(e) {
+            startX = e.touches[0].clientX;
         }
 
-        function playJumpSound() {
-            playSound(500, 200); // Play jump sound
+        function handleTouchMove(e) {
+            endX = e.touches[0].clientX;
         }
 
-        function playShootSound() {
-            playSound(1000, 100); // Play shoot sound
-        }
+        function handleTouchEnd() {
+            const swipeDistance = endX - startX;
 
-        function playCollectSound() {
-            playSound(1500, 150); // Play collect sound
-        }
-
-        function playGameOverSound() {
-            playSound(200, 300); // Play game over sound
-        }
-
-        function playLevelUpSound() {
-            playSound(2500, 200); // Play level up sound
-        }
-
-        function playExplosionSound() {
-            playSound(4000, 100); // Play explosion sound
-        }
-
-        function drawPlayer() {
-            ctx.fillStyle = '#ffffff'; // Player color
-
-            // Draw player body
-            ctx.fillRect(player.x, player.y, player.width, player.height);
-
-            // Draw eyes
-            ctx.fillStyle = '#000000'; // Eyes color
-            ctx.fillRect(player.x + 10, player.y + 10, 8, 8); // Left eye
-            ctx.fillRect(player.x + 22, player.y + 10, 8, 8); // Right eye
-
-            // Draw mouth
-            ctx.strokeStyle = '#000000'; // Mouth color
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-            ctx.moveTo(player.x + 10, player.y + 30);
-            ctx.lineTo(player.x + 30, player.y + 30);
-            ctx.stroke();
-
-            // Draw bullets
-            ctx.fillStyle = '#ff0000'; // Bullet color
-            player.bullets.forEach(bullet => {
-                ctx.fillRect(bullet.x, bullet.y, 10, 5);
-            });
-        }
-
-        function drawGround() {
-            ctx.fillStyle = '#ffffff'; // Ground color
-            ctx.fillRect(ground.x, ground.y, ground.width, ground.height);
-        }
-
-        function drawPlatforms() {
-            ctx.fillStyle = '#ffffff'; // Platform color
-            platforms.forEach(p => ctx.fillRect(p.x, p.y, p.width, p.height));
-        }
-
-        function drawCollectibles() {
-            ctx.fillStyle = '#ffff00'; // Collectible color
-            collectibles.forEach(col => ctx.fillRect(col.x, col.y, 10, 10));
-        }
-
-        function drawEnemies() {
-            ctx.fillStyle = '#ff00ff'; // Enemy color
-            enemies.forEach(enemy => ctx.fillRect(enemy.x, enemy.y, 20, 20));
-        }
-
-        function drawScore() {
-            ctx.fillStyle = '#ffffff'; // Score color
-            ctx.font = '24px Arial';
-            ctx.fillText(`Score: ${score}`, 20, 30);
-            ctx.fillText(`Level: ${level + 1}`, canvas.width - 120, 30);
-        }
-
-        function drawConfetti() {
-            for (let i = 0; i < 100; i++) {
-                ctx.fillStyle = `hsl(${Math.random() * 360}, 100%, 50%)`;
-                ctx.fillRect(Math.random() * canvas.width, Math.random() * canvas.height, 5, 5);
-            }
-        }
-
-        function update() {
-            // Player movement
-            if (keys.right) player.speedX += 0.5;
-            if (keys.left) player.speedX -= 0.5;
-            if (keys.shoot && player.shootCooldown <= 0) shoot();
-
-            player.speedX *= friction; // Apply friction
-            player.speedY += gravity; // Apply gravity
-
-            player.x += player.speedX;
-            player.y += player.speedY;
-
-            // Collision with ground
-            if (player.y + player.height > ground.y) {
-                player.y = ground.y - player.height;
-                player.speedY = 0;
-                player.isJumping = false;
-                player.jumpCount = 0;
-            }
-
-            // Collision with platforms
-            platforms.forEach(p => {
-                if (player.y + player.height > p.y && player.y + player.height < p.y + p.height &&
-                    player.x + player.width > p.x && player.x < p.x + p.width) {
-                    player.y = p.y - player.height;
-                    player.speedY = 0;
-                    player.isJumping = false;
-                }
-            });
-
-            // Prevent player from moving off-screen
-            if (player.x < 0) player.x = 0;
-            if (player.x + player.width > canvas.width) player.x = canvas.width - player.width;
-
-            // Update bullets
-            player.bullets.forEach(bullet => {
-                bullet.x += 5;
-                if (bullet.x > canvas.width) {
-                    bullet.remove = true;
-                }
-            });
-            player.bullets = player.bullets.filter(bullet => !bullet.remove);
-
-            // Check for collisions with collectibles
-            collectibles.forEach((col, index) => {
-                const dx = player.x + player.width / 2 - (col.x + 5);
-                const dy = player.y + player.height / 2 - (col.y + 5);
-                const distance = Math.sqrt(dx * dx + dy * dy);
-
-                if (distance < 15) {
-                    collectibles.splice(index, 1); // Remove collectible
-                    score += 10; // Increase score
-                    playCollectSound(); // Play collect sound
-                }
-            });
-
-            // Check for collisions with enemies
-            enemies.forEach((enemy, index) => {
-                const dx = player.x + player.width / 2 - (enemy.x + 10);
-                const dy = player.y + player.height / 2 - (enemy.y + 10);
-                const distance = Math.sqrt(dx * dx + dy * dy);
-
-                if (distance < 20) {
-                    playGameOverSound(); // Play game over sound
-                    alert('Game Over!');
-                    document.location.reload(); // Restart game
-                }
-            });
-
-            // Check for bullet collisions with enemies
-            player.bullets.forEach((bullet, bIndex) => {
-                enemies.forEach((enemy, eIndex) => {
-                    const dx = bullet.x - (enemy.x + 10);
-                    const dy = bullet.y - (enemy.y + 10);
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-
-                    if (distance < 15) {
-                        enemies.splice(eIndex, 1); // Remove enemy
-                        player.bullets.splice(bIndex, 1); // Remove bullet
-                        score += 20; // Increase score
-                        playExplosionSound(); // Play explosion sound
-                    }
-                });
-            });
-
-            // Check if all collectibles are collected
-            if (collectibles.length === 0) {
-                playLevelUpSound(); // Play level up sound
-                drawConfetti(); // Draw confetti
-                if (level < levelData.length - 1) {
-                    setTimeout(() => {
-                        level++;
-                        initializeLevel();
-                    }, 1000);
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                if (swipeDistance > 0) {
+                    moveCharacter('right');
                 } else {
-                    alert('You Win! Game completed!');
-                    document.location.reload(); // Restart game
+                    moveCharacter('left');
                 }
             }
 
-            // Clear canvas
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            // Draw everything
-            drawGround();
-            drawPlatforms();
-            drawCollectibles();
-            drawEnemies();
-            drawPlayer();
-            drawScore();
-
-            // Request next frame
-            requestAnimationFrame(update);
+            // Reset touch positions
+            startX = 0;
+            endX = 0;
         }
 
-        function shoot() {
-            player.bullets.push({ x: player.x + player.width, y: player.y + player.height / 2 });
-            player.shootCooldown = 15; // Cooldown period
-            playShootSound(); // Play shoot sound
-        }
+        function moveCharacter(direction) {
+            const currentTransform = getComputedStyle(character).transform;
+            const matrix = new WebKitCSSMatrix(currentTransform);
+            let newTranslateX = matrix.m41;
 
-        function keyDown(e) {
-            if (e.key === 'ArrowRight') keys.right = true;
-            if (e.key === 'ArrowLeft') keys.left = true;
-            if (e.key === 'ArrowUp' && player.jumpCount < player.maxJumps) {
-                player.speedY = player.jumpPower;
-                player.isJumping = true;
-                player.jumpCount++;
-                playJumpSound(); // Play jump sound
+            if (direction === 'right') {
+                newTranslateX += 100; // Move right
+            } else if (direction === 'left') {
+                newTranslateX -= 100; // Move left
             }
-            if (e.key === ' ' && !keys.shoot) keys.shoot = true;
+
+            character.style.transform = `translateX(${newTranslateX}px)`;
+            checkCollision();
         }
 
-        function keyUp(e) {
-            if (e.key === 'ArrowRight') keys.right = false;
-            if (e.key === 'ArrowLeft') keys.left = false;
-            if (e.key === ' ' && keys.shoot) keys.shoot = false;
+        function createSkull() {
+            const skull = document.createElement('div');
+            skull.className = 'skull';
+            const positionX = Math.random() * (window.innerWidth - 40);
+            skull.style.left = `${positionX}px`;
+            skull.style.top = `0px`;
+            gameContainer.appendChild(skull);
+            skulls.push(skull);
+
+            // Remove skull after it leaves the screen
+            setTimeout(() => {
+                if (skulls.includes(skull)) {
+                    gameContainer.removeChild(skull);
+                    skulls = skulls.filter(s => s !== skull);
+                }
+            }, 10000); // Skull disappears after 10 seconds
         }
 
-        function initializeLevel() {
-            platforms = levelData[level].platforms;
-            collectibles = Array.from({ length: levelData[level].collectibles }, () => ({
-                x: Math.random() * (canvas.width - 10),
-                y: Math.random() * (canvas.height - 60)
-            }));
-            enemies = Array.from({ length: levelData[level].enemies }, () => ({
-                x: Math.random() * (canvas.width - 20),
-                y: Math.random() * (canvas.height - 60)
-            }));
+        function updateSkulls() {
+            skulls.forEach(skull => {
+                let top = parseFloat(getComputedStyle(skull).top);
+                top += 5; // Move skulls down
+                skull.style.top = `${top}px`;
+
+                // Check if skull is off-screen
+                if (top > window.innerHeight) {
+                    gameContainer.removeChild(skull);
+                    skulls = skulls.filter(s => s !== skull);
+                }
+            });
         }
 
-        window.addEventListener('keydown', keyDown);
-        window.addEventListener('keyup', keyUp);
+        function checkCollision() {
+            skulls.forEach(skull => {
+                const skullRect = skull.getBoundingClientRect();
+                const characterRect = character.getBoundingClientRect();
 
-        // Start the game
-        initializeLevel();
-        update();
+                if (
+                    skullRect.left < characterRect.right &&
+                    skullRect.right > characterRect.left &&
+                    skullRect.top < characterRect.bottom &&
+                    skullRect.bottom > characterRect.top
+                ) {
+                    // Collision detected
+                    gameContainer.removeChild(skull);
+                    skulls = skulls.filter(s => s !== skull);
+                    score++;
+                    log.textContent = `Score: ${score} | Swipe left or right to crush skulls!`;
+                }
+            });
+        }
+
+        // Create skulls periodically
+        setInterval(createSkull, 2000); // New skull every 2 seconds
+        setInterval(updateSkulls, 50); // Update skull positions every 50ms
+
+        document.getElementById('game-container').addEventListener('touchstart', handleTouchStart);
+        document.getElementById('game-container').addEventListener('touchmove', handleTouchMove);
+        document.getElementById('game-container').addEventListener('touchend', handleTouchEnd);
     </script>
 </body>
 </html>
