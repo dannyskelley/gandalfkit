@@ -1,11 +1,8 @@
 ---
-title: 'Daily App'
-description: 'We appreciate your feedback'
 permalink: 'daily/'
-eleventyNavigation:
-
 
 ---
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -136,6 +133,21 @@ eleventyNavigation:
         a:hover {
             text-decoration: underline;
         }
+
+        .goalContainer {
+            margin-bottom: 30px;
+        }
+
+        .goalContainer input[type="text"] {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #444;
+            color: #fff;
+            padding: 5px;
+            margin-left: 35px;
+            width: calc(100% - 70px);
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -162,10 +174,15 @@ eleventyNavigation:
             <span class="checkmark"></span>
         </label>
 
-        <label class="container">Top 3 Goals
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
+        <div class="goalContainer">
+            <label class="container">Top 3 Goals
+                <input type="checkbox" id="topGoalsCheckbox">
+                <span class="checkmark"></span>
+            </label>
+            <input type="text" id="goal1" placeholder="Enter top goal 1">
+            <input type="text" id="goal2" placeholder="Enter top goal 2">
+            <input type="text" id="goal3" placeholder="Enter top goal 3">
+        </div>
 
         <label class="container">Eat Protein
             <input type="checkbox">
@@ -213,6 +230,7 @@ eleventyNavigation:
             progressText.textContent = `${Math.round(progress * 100)}%`;
 
             localStorage.setItem('taskProgress', JSON.stringify(Array.from(checkboxes).map(cb => cb.checked)));
+            saveGoals();
         }
 
         function loadProgress() {
@@ -225,17 +243,33 @@ eleventyNavigation:
             }
         }
 
+        function saveGoals() {
+            const goals = Array.from(document.querySelectorAll('.goalContainer input[type="text"]')).map(input => input.value);
+            localStorage.setItem('topGoals', JSON.stringify(goals));
+        }
+
+        function loadGoals() {
+            const savedGoals = JSON.parse(localStorage.getItem('topGoals'));
+            if (savedGoals) {
+                document.querySelectorAll('.goalContainer input[type="text"]').forEach((input, index) => {
+                    input.value = savedGoals[index] || '';
+                });
+                document.getElementById('topGoalsCheckbox').checked = savedGoals.some(goal => goal);
+            }
+        }
+
         function resetProgress() {
             checkboxes.forEach(cb => cb.checked = false);
+            document.querySelectorAll('.goalContainer input[type="text"]').forEach(input => input.value = '');
             updateProgress();
         }
 
         function openRandomVideo(type) {
             const videos = {
                 meditation: [
-                    'https://www.youtube.com/watch?v=Tjx3Whpmg8s',
-                    'https://www.youtube.com/watch?v=DaHH--jJBtg',
-                    'https://www.youtube.com/watch?v=LDs7jglje_U'
+                    'https://www.youtube.com/watch?v=inpok4MKVLM',
+                    'https://www.youtube.com/watch?v=O-6f5wQXSu8',
+                    'https://www.youtube.com/watch?v=SEfs5TJZ6Nk'
                 ],
                 exercise: [
                     'https://www.youtube.com/watch?v=3sEeVJEXTfY',
@@ -254,6 +288,6 @@ eleventyNavigation:
         resetButton.addEventListener('click', resetProgress);
 
         loadProgress();
+        loadGoals();
     </script>
-</body>
-</html>
+</
