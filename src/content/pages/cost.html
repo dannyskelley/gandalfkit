@@ -1,0 +1,181 @@
+---
+title: 'Cost App'
+description: 'cost'
+permalink: 'cost/'
+eleventyNavigation:
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cost Calculator</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: black;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 100%;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.25rem;
+            border: 1px solid white;
+            border-radius: 4px;
+            background: black;
+            color: white;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+
+        .result h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .result p {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .input-group label, .input-group input, button {
+                font-size: 1.2rem;
+            }
+
+            button {
+                padding: 10px 20px;
+            }
+
+            .result h2 {
+                font-size: 1.5rem;
+            }
+
+            .result p {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Cost Calculator</h1>
+        <form id="calculatorForm">
+            <div class="input-group">
+                <label for="numPages">Number of Pages:</label>
+                <input type="number" id="numPages" name="numPages" min="1" max="100" placeholder="Enter number of pages" required>
+            </div>
+            <div class="input-group">
+                <label for="designCost">Design Cost ($):</label>
+                <input type="number" id="designCost" name="designCost" placeholder="Enter design cost" required>
+            </div>
+            <div class="input-group">
+                <label for="developmentCost">Development Cost ($):</label>
+                <input type="number" id="developmentCost" name="developmentCost" placeholder="Enter development cost" required>
+            </div>
+            <div class="input-group">
+                <label for="contentCost">Content Creation Cost ($):</label>
+                <input type="number" id="contentCost" name="contentCost" placeholder="Enter content creation cost" required>
+            </div>
+            <div class="input-group">
+                <label for="hostingCost">Hosting Cost (per year) ($):</label>
+                <input type="number" id="hostingCost" name="hostingCost" placeholder="Enter hosting cost" required>
+            </div>
+            <div class="input-group">
+                <label for="maintenanceCost">Maintenance Cost (per year) ($):</label>
+                <input type="number" id="maintenanceCost" name="maintenanceCost" placeholder="Enter maintenance cost" required>
+            </div>
+            <button type="button" onclick="calculateCost()">Calculate Total Cost</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Total Estimated Cost:</h2>
+            <p id="totalCost">$0.00</p>
+        </div>
+    </div>
+
+    <script>
+        function calculateCost() {
+            // Retrieve the input values
+            const numPages = parseInt(document.getElementById('numPages').value) || 0;
+            const designCost = parseFloat(document.getElementById('designCost').value) || 0;
+            const developmentCost = parseFloat(document.getElementById('developmentCost').value) || 0;
+            const contentCost = parseFloat(document.getElementById('contentCost').value) || 0;
+            const hostingCost = parseFloat(document.getElementById('hostingCost').value) || 0;
+            const maintenanceCost = parseFloat(document.getElementById('maintenanceCost').value) || 0;
+
+            // Calculate page cost
+            let pageCost = 0;
+            if (numPages >= 1 && numPages <= 5) {
+                pageCost = 150;
+            } else if (numPages === 6) {
+                pageCost = 250;
+            } else if (numPages > 6) {
+                pageCost = 250 + (numPages - 6) * 5; // $5 for each additional page after 6
+            }
+
+            // Calculate the total cost
+            const totalCost = designCost + developmentCost + contentCost + hostingCost + maintenanceCost + pageCost;
+
+            // Display the total cost
+            document.getElementById('totalCost').textContent = `$${totalCost.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
+
