@@ -1,0 +1,94 @@
+<style>
+
+
+    .open-popup {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        font-family: "Poppins", Arial, sans-serif;
+        margin-top:30px;
+        
+    }
+
+    .popup {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        z-index: 999;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 40px 50px 40px 40px;
+        border-radius: 5px;
+        text-align: left;
+        position: relative;
+        max-width: 500px;
+        margin: 10px;
+    }
+
+    .close-popup {
+        cursor: pointer;
+        font-size: 40px;
+        color: white;
+        background-color: black;
+        height: 50px;
+        width: 50px;
+        border-radius: 999px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .show-popup {
+        display: flex; /* Show popup when class is added */
+    }
+
+    .fade-in {
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+<body>
+<button class="open-popup">👍 30 Day Money Back Guarantee</button>
+
+<div class="popup" id="popup">
+    <div class="popup-content fade-in">
+        <span class="close-popup" id="closePopup">&times;</span>
+        <h2 class="cs-title" style="color: black;">👍 30 Day Money Back Guarantee</h2>
+        <p>We stand behind our service with a 30-day money-back guarantee. If you’re not completely satisfied, we’ll make it right and refund every penny, no questions asked!</p>
+        <a style="margin-top: 30px;" target="_blank" href="#pricing" class="cs-button-solid" >Try Us Risk Free</a>
+
+
+
+    </div>
+</div>
+
+<script>
+    const openPopupButton = document.querySelector('.open-popup');
+    const popup = document.getElementById('popup');
+    const closePopupButton = document.getElementById('closePopup');
+
+    openPopupButton.addEventListener('click', () => {
+        popup.classList.add('show-popup');
+    });
+
+    closePopupButton.addEventListener('click', () => {
+        popup.classList.remove('show-popup');
+    });
+</script>
