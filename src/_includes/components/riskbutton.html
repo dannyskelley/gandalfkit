@@ -22,17 +22,17 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        z-index: 999;
+        z-index: 999999;
     }
 
     .popup-content {
         background: white;
-        padding: 40px 50px 40px 40px;
+        padding: 30px 50px 30px 30px;
         border-radius: 5px;
         text-align: left;
-        position: relative;
+        position: fixed;
         max-width: 500px;
-        margin: 10px;
+        margin: 100px 10px 10px 10px;
     }
 
     .close-popup {
@@ -63,8 +63,7 @@
         to { opacity: 1; }
     }
 </style>
-</head>
-<body>
+
 <button class="open-popup">👍 30 Day Money Back Guarantee</button>
 
 <div class="popup" id="popup">
