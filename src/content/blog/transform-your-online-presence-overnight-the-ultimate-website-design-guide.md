@@ -37,7 +37,7 @@ If you want a unique, polished look, hiring a web design professional might be t
 
 ## Step 3: Plan Your Content
 
-Content is king! Outline the essential pages for your website: Home, About, Services, and Contact. This structure will help visitors navigate your site easily and understand your offerings. Keywords like **website creation** and **design your own website** should guide your content development.
+Content is king! Outline the essential pages for your website: Home, About, Services, and Contact. This structure will help visitors navigate your site easily and understand your offerings. 
 
 ## Step 4: Choose a Domain and Hosting
 
