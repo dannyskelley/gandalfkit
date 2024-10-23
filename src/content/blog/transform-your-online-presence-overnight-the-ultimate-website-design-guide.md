@@ -1,5 +1,5 @@
 ---
-title: Transform Your Online Presence Overnight - The Ultimate Website Design Guide!
+title: Website Design Guide
 url: Transform Your Online Presence Overnight - The Ultimate Website Design Guide!
 description: Transform Your Online Presence Overnight - The Ultimate Website Design Guide!
 author: gandalf
