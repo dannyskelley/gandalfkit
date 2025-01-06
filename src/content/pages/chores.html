@@ -1,0 +1,446 @@
+---
+title: 'Chores App'
+description: 'chores'
+permalink: 'chores/'
+eleventyNavigation:
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chore Gandalf</title>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/poppins-v21-latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/poppins-v21-latin-900.woff2" crossorigin>
+  <style>
+   
+  /* Poppins-regular - latin */
+  @font-face {
+        font-style: normal;
+        font-family: "Poppins";
+        font-weight: 100;
+        font-display: swap;
+        src: local(""), url("/assets/fonts/poppins-v21-latin-regular.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/Poppins-v21-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* Poppins-700 - latin */
+    @font-face {
+        font-style: normal;
+        font-family: "Poppins";
+        font-weight: 700;
+        font-display: swap;
+        src: local(""), url("/assets/fonts/poppins-v21-latin-900.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/Poppins-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* Poppins-900 - latin */
+    @font-face {
+        font-style: normal;
+        font-family: "Poppins";
+        font-weight: 900;
+        font-display: swap;
+        src: local(""), url("/assets/fonts/poppins-v21-latin-900.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/Poppins-v21-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    :root {
+      --apple-green: #32d74b;
+      --dark-bg: #000000;
+      --card-bg: #1c1c1e;
+      --text: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0 0 5rem 0;
+      background: var(--dark-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      background: var(--dark-bg);
+      color: white;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .reset-button {
+      background: var(--apple-green);
+      color: black;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .reset-button:active {
+      transform: scale(0.95);
+      opacity: 0.9;
+    }
+
+    .task-section {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .task-section:hover {
+      transform: translateY(-2px);
+    }
+
+    .task-section h2 {
+      font-size: 1.4rem;
+      margin: 0 0 1.5rem;
+      padding-bottom: 0.5rem;
+      font-weight: 700;
+      color: var(--apple-green);
+    }
+
+    .subsection {
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .subsection:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .subsection h3 {
+      font-size: 1.1rem;
+      margin: 0 0 1rem;
+      color: var(--apple-green);
+      font-weight: 600;
+    }
+
+    .task {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 0;
+      gap: 1rem;
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .task.completed {
+      transform: translateX(10px);
+    }
+
+    .task span {
+      font-size: 1.2rem;
+line-height:1.2rem;
+      flex: 1;
+      font-weight: 500;
+    }
+
+    .checkbox {
+      width: 26px;
+      height: 26px;
+      border: 2.5px solid #f8f9fa;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .checkbox:hover {
+      transform: scale(1.1);
+      border-color: var(--apple-green);
+    }
+
+    .checkbox::after {
+      content: '';
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--apple-green);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .task.completed .checkbox::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .task.completed span {
+      color: var(--apple-green);
+      text-decoration: line-through;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--apple-green);
+      color: black;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 12px rgba(50, 215, 75, 0.3);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 600px) {
+      .task-section {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+     
+
+      .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Chore Gandalf
+    <button onclick="resetAll()" class="reset-button">Reset All</button>
+  </header>
+
+  <div id="dailyTasks" class="task-section">
+    <h2>Daily Chores</h2>
+    
+    <div class="subsection" data-time="morning">
+      <h3>Morning</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Make all beds</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Wipe down kitchen counters and dining table</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Sweep high-traffic areas</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Feed and water dogs; clean bowls if needed</span></div>
+    </div>
+
+    <div class="subsection" data-time="afternoon">
+      <h3>Afternoon</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Pick up clutter in living areas and bedrooms</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Wash dishes after meals</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Start a small load of laundry</span></div>
+    </div>
+
+    <div class="subsection" data-time="evening">
+      <h3>Evening</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Empty trash cans in kitchen and bathrooms</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Quick vacuum or sweep areas with pet hair</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Spot-clean spills on floors or furniture</span></div>
+    </div>
+  </div>
+
+  <div id="weeklyTasks" class="task-section">
+    <h2>Weekly Chores</h2>
+    
+    <div class="subsection" data-day="monday">
+      <h3>Monday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Change and wash bed linens</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Dust furniture</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Vacuum or mop floors</span></div>
+    </div>
+
+    <div class="subsection" data-day="tuesday">
+      <h3>Tuesday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Scrub toilets, sinks, and tubs/showers</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Clean mirrors and countertops</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Mop bathroom floors</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Empty trash cans</span></div>
+    </div>
+
+    <div class="subsection" data-day="wednesday">
+      <h3>Wednesday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Wipe down appliances</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Clean out the fridge</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Mop the kitchen floor</span></div>
+    </div>
+
+    <div class="subsection" data-day="thursday">
+      <h3>Thursday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Dust furniture, shelves, and electronics</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Vacuum upholstery</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Mop or vacuum wood floors</span></div>
+    </div>
+
+    <div class="subsection" data-day="friday">
+      <h3>Friday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Sweep and mop staircases</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Wash dog beds and blankets</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Organize and declutter one small area</span></div>
+    </div>
+
+    <div class="subsection" data-day="saturday">
+      <h3>Saturday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Sweep porches and entryways</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Pick up debris in the yard</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Deep clean pet areas</span></div>
+    </div>
+
+    <div class="subsection" data-day="sunday">
+      <h3>Sunday</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Fold and put away laundry</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Review upcoming week and adjust tasks</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Tidy any missed areas</span></div>
+    </div>
+  </div>
+
+  <div id="monthlyTasks" class="task-section">
+    <h2>Monthly Chores</h2>
+    
+    <div class="subsection" data-week="1">
+      <h3>Week 1</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Wash windows inside and out</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Dust ceiling fans and light fixtures</span></div>
+    </div>
+
+    <div class="subsection" data-week="2">
+      <h3>Week 2</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Deep clean the oven and stovetop</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Wipe down walls, doors, and baseboards</span></div>
+    </div>
+
+    <div class="subsection" data-week="3">
+      <h3>Week 3</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Vacuum or mop attic and basement floors</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Organize pantry and kitchen cabinets</span></div>
+    </div>
+
+    <div class="subsection" data-week="4">
+      <h3>Week 4</h3>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Declutter clothes</span></div>
+      <div class="task"><div class="checkbox" onclick="toggleComplete(this)"></div><span>Deep clean behind and under furniture</span></div>
+    </div>
+  </div>
+
+  <button onclick="scrollToTop()" class="back-to-top" id="backToTop">↑</button>
+
+  <script>
+    function triggerConfetti() {
+      const colors = ['#32d74b', '#ffffff', '#4a4a4a'];
+      const end = Date.now() + 1000;
+
+      (function frame() {
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 },
+          colors: colors
+        });
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 },
+          colors: colors
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }());
+    }
+
+    function toggleComplete(checkbox) {
+      try {
+        const task = checkbox.parentElement;
+        const subsection = task.closest('.subsection');
+        const section = task.closest('.task-section');
+        
+        if (!task || !subsection || !section) return;
+        
+        task.classList.toggle('completed');
+        
+        setTimeout(() => {
+          // Check if subsection is complete
+          const subsectionTasks = subsection.querySelectorAll('.task');
+          const subsectionCompleted = subsection.querySelectorAll('.task.completed');
+          
+          if (subsectionTasks.length === subsectionCompleted.length) {
+            triggerConfetti();
+          }
+          
+          // Check if entire section is complete
+          const sectionTasks = section.querySelectorAll('.task');
+          const sectionCompleted = section.querySelectorAll('.task.completed');
+          
+          if (sectionTasks.length === sectionCompleted.length) {
+            setTimeout(triggerConfetti, 300);
+          }
+        }, 300);
+      } catch (error) {
+        console.error('Error in toggleComplete:', error);
+      }
+    }
+
+    function resetAll() {
+      try {
+        document.querySelectorAll('.task').forEach(task => {
+          task.classList.remove('completed');
+        });
+      } catch (error) {
+        console.error('Error in resetAll:', error);
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Show/hide back to top button
+    window.onscroll = function() {
+      const button = document.getElementById('backToTop');
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        button.classList.add('visible');
+      } else {
+        button.classList.remove('visible');
+      }
+    };
+  </script>
