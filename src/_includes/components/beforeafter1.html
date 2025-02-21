@@ -1,0 +1,232 @@
+<!-- ============================================ -->
+<!--                  Side By Side                -->
+<!-- ============================================ -->
+
+
+
+<style>
+    /*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-2295 {
+    padding: var(--sectionPadding);
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-2295 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 4vw, 4rem);
+  }
+  #sbs-2295 .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(1.98vw, .826rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 52.125em;
+    height: 36.125em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #sbs-2295 .cs-picture {
+    width: 100%;
+   
+   
+    display: block;
+  }
+  #sbs-2295 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+  }
+  #sbs-2295 .cs-picture-wrapper1 {
+    width: 30.75em;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  #sbs-2295 .cs-picture-wrapper2 {
+    width: 50.8125em;
+   
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    position: absolute;
+    right: -170px;
+    top:230px;
+  }
+  #sbs-2295 .cs-tag {
+    /* 14px - 24px */
+    font-size: clamp(0.875rem, 1.4vw, 1.1rem);
+    font-weight: 500;
+    line-height: 1.2em;
+    text-align: center;
+    color: #999;
+  }
+  #sbs-2295 .cs-arrow {
+    width: 19.25em;
+    height: 3.375em;
+    position: absolute;
+    top: 4em;
+    left: 15.9375em;
+    transform: rotate(30deg);
+  }
+  #sbs-2295 .cs-content {
+    /* set text align to center if content needs to be centrally aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    /* aligns content to the left, set to center to centrally align */
+    align-items: flex-start;
+  }
+  #sbs-2295 .cs-title {
+    max-width: 30ch;
+  }
+  #sbs-2295 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-2295 .cs-text:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+ 
+  #sbs-2295 .cs-h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #sbs-2295 .cs-ul {
+    margin: 0.75rem 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #sbs-2295 .cs-li {
+    font-size: 1rem;
+    line-height: 1.5em;
+    list-style: none;
+    /* 20px - 24px */
+    padding-left: clamp(1.25rem, 3vw, 1.5rem);
+    color: var(--bodyTextColor);
+    position: relative;
+  }
+  #sbs-2295 .cs-li strong {
+    color: #1a1a1a;
+  }
+  #sbs-2295 .cs-li::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--secondary);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-2295 .cs-container {
+    max-width: 80rem;
+  }
+  #sbs-2295 .cs-image-group {
+    order: initial;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-2295 .cs-container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #sbs-2295 .cs-content {padding-top: 100px;}
+  #sbs-2295 .cs-image-group {
+    font-size: min(1.03vw, 1rem);
+   
+  }
+
+  #sbs-2295 .cs-picture1 {opacity: .3;transition: all ease .2s;}
+  #sbs-2295 .cs-picture1:hover {opacity: 1; transition: all ease .2s;}
+  #sbs-2295 .cs-picture-wrapper1 {
+  
+    bottom: 7.5625em;
+  }
+  #sbs-2295 .cs-picture-wrapper2 {
+    
+    top: 6.5em;
+  }
+}
+                                
+</style>
+
+
+<section id="sbs-2295">
+    <div class="cs-container">
+       
+        <div class="cs-content">
+            <span class="cs-topper">Custom Small Business & Non Profit</span>
+            <h2 class="cs-title">SEO Optimized Web Design</h2>
+            <p class="cs-text">
+                No Wordpress, Wix or other page builders. Get a hand coded & custom, SEO Optimized, Responsive, Mobile, Tablet & Desktop friendly website for your business in as little as 7 days. Starting at $150/month
+            </p>
+          
+            <a href="/pricing" class="cs-button-solid">See what's included</a>
+        </div>
+
+
+
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <div class="cs-picture-wrapper1">
+                <span class="cs-tag cs-topper">Before (Wix)</span>
+                <picture class="cs-picture cs-picture1">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/before.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/before.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/before.jpg" alt="construction" width="272" height="337">
+                </picture>
+                
+            </div>
+            <!--Small Image-->
+            <div class="cs-picture-wrapper2">
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/after.png">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/after.png">
+                    <img loading="lazy" decoding="async" src="/assets/images/after.png" alt="construction" width="243" height="367">
+                </picture>
+                <span class="cs-tag cs-topper" style="text-align: right; padding-right:15em;">After (Gandalf)</span>
+            </div>
+            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/before-after-arrow.svg" alt="arrow" width="148" height="54">
+        </div>
+    </div>
+</section>
+                                
