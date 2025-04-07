@@ -11,7 +11,8 @@
     scroll-behavior: smooth;
   }
   :root {
-    --primary: #e40001;
+    --primary: #0060ff;
+    --primaryActive: #000;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
@@ -34,7 +35,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;
-    color: var(--primary);
+    color: #666;
     text-align: inherit;
   }
   .cs-title {
@@ -788,7 +789,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background: var(--primary);
+    background: black;
     height: 2px;
     width: 0%;
     transition: width 0.3s;
