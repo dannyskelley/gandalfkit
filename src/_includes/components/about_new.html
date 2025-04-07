@@ -1,0 +1,256 @@
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1982">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Design Gandalf: Detroit Local Web Designer</h2>
+            <p class="cs-text-large">
+                Design Gandalf is a small but mighty two person team with roots in Daytona Beach Florida and a home base in Metro Detroit. We specialize in building powerful websites that don’t just look great. They work hard.
+                <BR><BR>
+                With 20+ years of combined experience in web design, development, and SEO, we help small businesses across the U.S. turn their websites into their strongest marketing tool. For us, a website isn’t just a digital presence. It’s your brand’s handshake, sales pitch, and story all rolled into one.
+                <BR><BR>
+                Whether you're local to Detroit or across the country, we’re here to make your business stand out.        <BR><BR>         </p>
+                {% include 'components/ctabutton.html' %}
+            <div class="cs-ratings">
+                <div class="cs-stars">
+                    <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                    <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                    <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                    <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                    <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                </div>
+                <div class="cs-rating">
+                    <h3 class="cs-h3">100% 5 Star Google Reviews</h3>
+                    <p class="cs-rating-text">
+                       We stand by our quality work
+                    </p>
+                </div>
+                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/google.svg" alt="star" width="20" height="20">
+            </div>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/danny.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/danny.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/danny.jpg" alt="staff member smiling" width="630" height="680">
+            </picture>
+            <div class="cs-box">
+                <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/teal-users.svg" alt="people" width="60" height="60">
+                <span class="cs-desc">
+                   20+ Years
+                </span>
+                <p class="cs-box-text">
+                    Web Design, Development & SEO experience
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+                                <style>
+                                    /*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-1982 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-1982:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #sbs-1982 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbs-1982 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 35.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbs-1982 .cs-text-large {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+  }
+  #sbs-1982 .cs-text {
+    margin-bottom: 2rem;
+  }
+ 
+  #sbs-1982 .cs-ratings {
+    width: 100%;
+    margin: 0;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+    align-self: stretch;
+  }
+  #sbs-1982 .cs-ratings:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.1;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #sbs-1982 .cs-stars {
+    display: flex;
+    flex-direction: row;
+  }
+  #sbs-1982 .cs-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  #sbs-1982 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #sbs-1982 .cs-rating-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #sbs-1982 .cs-icon {
+    width: 5.125rem;
+    height: 5.9375rem;
+    position: absolute;
+    top: -1.875rem;
+    right: 1.25rem;
+  }
+  #sbs-1982 .cs-image-group {
+    width: 100%;
+    max-width: 39.375rem;
+    /* Changes to auto at desktop */
+    height: 30rem;
+    /* clips the corners of the children around the border radius */
+    overflow: hidden;
+    border-radius: 1rem;
+    order: -1;
+    position: relative;
+  }
+  #sbs-1982 .cs-background {
+    width: 100%;
+    height: 100%;
+    /* makes it cover the parent dimensions */
+    object-fit: cover;
+    display: block;
+  }
+  #sbs-1982 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* makes it cover the parent like a backgorund image */
+    object-fit: cover;
+    display: block;
+  }
+  #sbs-1982 .cs-box {
+    text-align: left;
+    width: 100%;
+    max-width: 19rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: #1A1A1A;
+    /* 48px - 80px */
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    /* 12px - 24px */
+    right: clamp(0.75rem, 2.5vw, 1.5rem);
+    /* 12px - 24px */
+    bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+  #sbs-1982 .cs-box-icon {
+    width: 3.75rem;
+    height: auto;
+    display: block;
+  }
+  #sbs-1982 .cs-desc {
+    /* 25px - 31px */
+    font-size: clamp(1.5625rem, 3.125vw, 1.9375rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    width: 100%;
+    margin: 1rem 0 0 0;
+    color: #fff;
+  }
+  #sbs-1982 .cs-box-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0.75rem 0 0 0;
+    color: #f7f7f7;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-1982 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #sbs-1982 .cs-content {
+    align-self: center;
+  }
+  #sbs-1982 .cs-image-group {
+    height: auto;
+    min-height: 42.5rem;
+  }
+}
+                                
+</style>
