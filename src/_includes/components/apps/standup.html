@@ -1,0 +1,209 @@
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+
+
+    .alert {
+      position: fixed;
+      inset: 0;
+      background: red;
+      color: white;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 2rem;
+      font-weight: bold;
+      z-index: 1000;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .alert.show {
+      display: flex;
+    }
+
+    button {
+      margin-top: 2rem;
+      background: #fff;
+      color: red;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #f8f8f8;
+    }
+
+    .content {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+
+    .content button {
+      margin: 0.5rem;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .content button:hover {
+      transform: scale(1.05);
+      background: #ffe066;
+    }
+
+    @media (min-width: 600px) {
+      .alert {
+        font-size: 3rem;
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
+
+      .content {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+  <div class="content">
+    <h1>Welcome to Your Health Reminder</h1>
+    <p>This page will remind you to stand up every hour,<br>and to watch the sunrise 🌅 and sunset 🌇.</p>
+    <div style="margin-top: 2rem;">
+      <button onclick="triggerDemo('🌅 TIME TO WATCH THE SUNRISE!')">🌅 Demo Sunrise</button>
+      <button onclick="triggerDemo('🌇 SUNSET CHECK-IN!')">🌇 Demo Sunset</button>
+      <button onclick="triggerDemo(randomStandUpMessage())">⏰ Demo Hourly Alert</button>
+    </div>
+  </div>
+
+  <div class="alert" id="alertBox">
+    <div id="alertMessage">STAND UP</div>
+    <button onclick="hideAlert()">DONE</button>
+  </div>
+
+  <script>
+    const alertBox = document.getElementById('alertBox');
+    const alertMessage = document.getElementById('alertMessage');
+
+    let originalTitle = document.title;
+    let titleInterval;
+
+    const youtubeVideos = [
+      "https://www.youtube.com/watch?v=8DyziWtkfBw", // Nirvana - Smells Like Teen Spirit
+      "https://www.youtube.com/watch?v=htv6UFJ9V3Q", // Green Day - Basket Case
+      "https://www.youtube.com/watch?v=xh-5FI21s6M", // Smashing Pumpkins - 1979
+      "https://www.youtube.com/watch?v=K7l5ZeVVoCA", // Blink-182 - All the Small Things
+      "https://www.youtube.com/watch?v=rhzmNRtIp8k", // Foo Fighters - Everlong
+      "https://www.youtube.com/watch?v=9Ht5RZpzPqw"  // No Doubt - Don't Speak
+    ];
+
+    function flashTitle(message) {
+      let visible = true;
+      titleInterval = setInterval(() => {
+        document.title = visible ? message : "⏰";
+        visible = !visible;
+      }, 500);
+    }
+
+    function resetTitle() {
+      clearInterval(titleInterval);
+      document.title = originalTitle;
+    }
+
+    function play90sMusic() {
+      const url = youtubeVideos[Math.floor(Math.random() * youtubeVideos.length)] + "?autoplay=1";
+      window.open(url, "_blank");
+    }
+
+    function showAlert(message) {
+      alertMessage.textContent = message;
+      alertBox.classList.add('show');
+      flashTitle(message);
+      play90sMusic();
+    }
+
+    function triggerDemo(message) {
+      showAlert(message);
+    }
+
+    function hideAlert() {
+      alertBox.classList.remove('show');
+      resetTitle();
+    }
+
+    function randomStandUpMessage() {
+      const messages = [
+        "🕺 MOVE THOSE LEGS!",
+        "💃 STRETCH IT OUT!",
+        "STAND UP AND DANCE! 🎶",
+        "TIME TO STAND! 🧍",
+        "GET THAT BLOOD FLOWING 🩸"
+      ];
+      return messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    function scheduleHourlyAlerts() {
+      const now = new Date();
+      const nextHour = new Date();
+      nextHour.setHours(now.getHours() + 1);
+      nextHour.setMinutes(0, 0, 0);
+      const msUntilNextHour = nextHour - now;
+      setTimeout(() => {
+        showAlert(randomStandUpMessage());
+        scheduleHourlyAlerts();
+      }, msUntilNextHour);
+    }
+
+    function scheduleSunriseSunsetAlerts() {
+      const now = new Date();
+      const sunriseTime = new Date();
+      sunriseTime.setHours(7, 0, 0, 0);
+
+      const sunsetTime = new Date();
+      sunsetTime.setHours(20, 0, 0, 0);
+
+      const msUntilSunrise = sunriseTime - now;
+      const msUntilSunset = sunsetTime - now;
+
+      if (msUntilSunrise > 0) {
+        setTimeout(() => {
+          showAlert("🌅 TIME TO WATCH THE SUNRISE!");
+        }, msUntilSunrise);
+      }
+
+      if (msUntilSunset > 0) {
+        setTimeout(() => {
+          showAlert("🌇 SUNSET CHECK-IN!");
+        }, msUntilSunset);
+      }
+    }
+
+    function init() {
+      scheduleHourlyAlerts();
+      scheduleSunriseSunsetAlerts();
+
+      if (new Date().getMinutes() === 0) {
+        showAlert(randomStandUpMessage());
+      }
+    }
+
+    init();
+  </script>
