@@ -27,7 +27,7 @@ eleventyNavigation:
     body {
       margin: 0;
       padding: 20px;
-      background-color: black;
+      background-color: #101010;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -64,9 +64,16 @@ eleventyNavigation:
       font-size: 1.05rem;
       margin-bottom: 12px;
       cursor: pointer;
-      padding: 8px 12px;
-      background-color: #1c1c1e;
-      border-radius: 12px;
+      padding: 10px 16px;
+      background: linear-gradient(145deg, #1a1a1c, #141414);
+      border-radius: 16px;
+      box-shadow: 6px 6px 12px #0c0c0d, -6px -6px 12px #18181a;
+      transition: all 0.1s ease-in-out;
+    }
+
+    label.container:active {
+      box-shadow: inset 4px 4px 8px #0c0c0d, inset -4px -4px 8px #18181a;
+      transform: scale(0.98);
     }
 
     .container input[type="checkbox"] {
@@ -96,11 +103,13 @@ eleventyNavigation:
       border-radius: 12px;
       font-size: 1rem;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      box-shadow: 4px 4px 8px #0c0c0d, -4px -4px 8px #18181a;
+      transition: all 0.1s ease-in-out;
     }
 
-    #resetButton:hover {
-      background-color: #0060df;
+    #resetButton:active {
+      box-shadow: inset 3px 3px 6px #0c0c0d, inset -3px -3px 6px #18181a;
+      transform: scale(0.97);
     }
 
     .countdownContainer {
@@ -126,11 +135,12 @@ eleventyNavigation:
   </style>
 </head>
 <body>
+  <audio id="clickSound" src="https://www.myinstants.com/media/sounds/button-16.mp3"></audio>
   <div class="contentContainer">
     <div class="progressDots" id="progressDots"></div>
 
     <label class="container"><input type="checkbox">Drink water and eat banana</label>
-    <label class="container"><input type="checkbox">Stretch and do pushups</label>
+    <label class="container"><input type="checkbox">Touch toes. Do pushups 5 min</label>
     <label class="container"><input type="checkbox">Brush, shower, shave</label>
     <label class="container"><input type="checkbox">Meditate 2-5 min</label>
     <label class="container"><input type="checkbox">Clean surfaces/office</label>
@@ -138,9 +148,6 @@ eleventyNavigation:
 
     <div class="goalContainer">
       <label class="container"><input type="checkbox" id="topGoalsCheckbox">Top 3 Goals</label>
-      <!--<input type="text" id="goal1" placeholder="Enter top goal 1">
-      <input type="text" id="goal2" placeholder="Enter top goal 2">
-      <input type="text" id="goal3" placeholder="Enter top goal 3">-->
     </div>
 
     <label class="container"><input type="checkbox">Text friend or family</label>
@@ -182,6 +189,7 @@ eleventyNavigation:
     const dotContainer = document.getElementById('progressDots');
     const resetButton = document.getElementById('resetButton');
     const totalTasks = checkboxes.length;
+    const clickSound = document.getElementById('clickSound');
 
     function renderDots() {
       dotContainer.innerHTML = '';
@@ -262,7 +270,11 @@ eleventyNavigation:
     }
 
     setInterval(updateCountdowns, 1000);
-    checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+    checkboxes.forEach(cb => cb.addEventListener('change', () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+      updateProgress();
+    }));
     resetButton.addEventListener('click', resetProgress);
     loadProgress();
     loadGoals();
