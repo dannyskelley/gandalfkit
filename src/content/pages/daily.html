@@ -3,7 +3,6 @@ title: 'Daily App'
 description: 'daily'
 permalink: 'daily/'
 eleventyNavigation:
-
 ---
 
 <!DOCTYPE html>
@@ -20,7 +19,7 @@ eleventyNavigation:
 
   <style>
     * {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
       color: white;
       box-sizing: border-box;
     }
@@ -43,69 +42,86 @@ eleventyNavigation:
     .progressDots {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 6px;
       margin: 20px 0;
       justify-content: center;
     }
 
     .dot {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
-      background-color: #444;
+      background-color: #2c2c2e;
     }
 
     .dot.completed {
-      background-color: #00ff00;
+      background-color: #30d158;
     }
 
     label.container {
       display: flex;
       align-items: center;
-      font-size: 1rem;
-      margin-bottom: 10px;
+      font-size: 1.05rem;
+      margin-bottom: 12px;
       cursor: pointer;
+      padding: 8px 12px;
+      background-color: #1c1c1e;
+      border-radius: 12px;
     }
 
     .container input[type="checkbox"] {
-      margin-right: 10px;
+      margin-right: 12px;
       transform: scale(1.2);
+      accent-color: #0a84ff;
     }
 
     .goalContainer input[type="text"] {
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       background: transparent;
       border: none;
       border-bottom: 1px solid #444;
-      padding: 5px;
+      padding: 6px 4px;
       color: white;
+      font-size: 1rem;
     }
 
     #resetButton {
-      background-color: #ff4500;
+      background-color: #0a84ff;
       color: white;
       border: none;
-      padding: 10px 20px;
-      margin: 20px auto;
+      padding: 12px 24px;
+      margin: 24px auto;
       display: block;
-      border-radius: 5px;
+      border-radius: 12px;
+      font-size: 1rem;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     #resetButton:hover {
-      background-color: #ff6347;
+      background-color: #0060df;
     }
 
     .countdownContainer {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .countdownContainer h2 {
+      color: #f2f2f7;
+      font-weight: 500;
+      margin-bottom: 4px;
     }
 
     .countdownDisplay {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: bold;
-      color: #ff4500;
+      color: #0a84ff;
+    }
+
+    input::placeholder {
+      color: #999;
     }
   </style>
 </head>
@@ -131,8 +147,8 @@ eleventyNavigation:
     <label class="container"><input type="checkbox">Eat whole foods + greens</label>
     <label class="container"><input type="checkbox">Avoid ultra-processed foods</label>
     <label class="container"><input type="checkbox">Walk 30 minutes</label>
-    <label class="container"><input type="checkbox">Limit negative inputs</label>
-
+    <label class="container"><input type="checkbox">Dont doomscroll after 7pm</label>
+    <label class="container"><input type="checkbox">Put out water bottle & banana</label>
     <button id="resetButton">Reset Progress</button>
 
     <div id="countdownApril26" class="countdownContainer">
@@ -253,9 +269,6 @@ eleventyNavigation:
     updateCountdowns();
   </script>
 
-
-
-
-{% include 'components/apps/standup.html' %}
+  {% include 'components/apps/standup.html' %}
 </body>
 </html>
