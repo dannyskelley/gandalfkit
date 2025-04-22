@@ -10,33 +10,20 @@ eleventyNavigation:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Happy or Die Trying</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
-    * { font-family: Montserrat, sans-serif; color: #fff; box-sizing: border-box; }
-    body { background: #101010; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-    .contentContainer { width: 100%; max-width: 500px; }
-    .progressDots { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0; justify-content: center; }
-    .dot { width: 18px; height: 18px; border-radius: 50%; background: #2c2c2e; }
-    .dot.completed { background: #30d158; }
-    label.container { display: none; flex-direction: row; align-items: center; font-size: 1.05rem; margin-bottom: 12px; padding: 10px 16px; background: linear-gradient(145deg, #1a1a1c, #141414); border-radius: 16px; box-shadow: 6px 6px 12px #0c0c0d, -6px -6px 12px #18181a; transition: all 0.1s ease-in-out; }
-    label.container.show { display: flex; }
-    label.container:active { box-shadow: inset 4px 4px 8px #0c0c0d, inset -4px -4px 8px #18181a; transform: scale(0.98); }
-    .container input[type=checkbox] { margin-right: 12px; transform: scale(1.2); accent-color: #0a84ff; }
-    #resetButton { background: #0a84ff; border: none; padding: 12px 24px; margin: 24px auto; border-radius: 12px; font-size: 1rem; cursor: pointer; box-shadow: 4px 4px 8px #0c0c0d, -4px -4px 8px #18181a; transition: all 0.1s ease-in-out; }
-    #resetButton:active { box-shadow: inset 3px 3px 6px #0c0c0d, inset -3px -3px 6px #18181a; transform: scale(0.97); }
-    @media (min-width: 600px) {
-      label.container { display: flex !important; }
-    }
+    * { font-family: 'Press Start 2P', cursive; color: red; box-sizing: border-box; }
+    body { background: #101010; margin: 0; padding: 20px; min-height: 100vh; }
+    .task { display: flex; align-items: center; gap: 10px; margin: 0px 0px 40px; cursor: pointer; font-size: 1.2rem; text-transform: uppercase; }
+    .circle { width: 18px; height: 18px; border-radius: 50%; background: red; flex-shrink: 0; }
+    .completed .circle { background: green; }
+    .completed .text { color: white; }
+    #resetButton { background: red; color: white; border: none; padding: 12px 24px; margin-top: 24px; border-radius: 99px; font-size: 1rem; cursor: pointer; }
   </style>
 </head>
 <body>
-  <audio id="clickSound" src="https://www.myinstants.com/media/sounds/button-16.mp3"></audio>
-  <div class="contentContainer">
-    <div class="progressDots" id="progressDots"></div>
-    <div id="taskList"></div>
-    <button id="resetButton">Reset Progress</button>
-  </div>
+<div id="taskList"></div>
+<button id="resetButton">Reset</button>
 
 <script>
 const tasks = [
@@ -49,98 +36,48 @@ const tasks = [
   'Top 3 Goals',
   'Text friend or family',
   'Eat whole foods + greens',
-  'Avoid ultra-processed foods',
+  'Avoid ultra processed foods',
   'Walk 30 minutes',
   'Dont doomscroll after 7pm',
   'Put out water bottle & banana'
 ];
 
-const clickSound = document.getElementById('clickSound');
 const taskList = document.getElementById('taskList');
-const dotContainer = document.getElementById('progressDots');
-const resetButton = document.getElementById('resetButton');
-
-let progress = [];
-const maxVisibleTasks = 5;
-
-function visibleCount() {
-  return Math.min(progress.filter(p => p).length + maxVisibleTasks, tasks.length);
-}
 
 function renderTasks() {
   taskList.innerHTML = '';
   tasks.forEach((task, index) => {
-    const label = document.createElement('label');
-    label.className = 'container';
-    if (index < visibleCount()) label.classList.add('show');
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.checked = progress[index];
-    checkbox.addEventListener('change', () => toggleTask(index));
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(task));
-    taskList.appendChild(label);
+    const div = document.createElement('div');
+    div.className = 'task';
+    div.dataset.index = index;
+
+    const circle = document.createElement('div');
+    circle.className = 'circle';
+
+    const text = document.createElement('div');
+    text.className = 'text';
+    text.textContent = task;
+
+    div.appendChild(circle);
+    div.appendChild(text);
+
+    div.addEventListener('click', () => toggleComplete(div));
+
+    taskList.appendChild(div);
   });
 }
 
-function renderDots() {
-  dotContainer.innerHTML = '';
-  tasks.forEach((_, index) => {
-    const dot = document.createElement('div');
-    dot.className = 'dot' + (progress[index] ? ' completed' : '');
-    dotContainer.appendChild(dot);
-  });
+function toggleComplete(taskElement) {
+  taskElement.classList.toggle('completed');
 }
 
-function toggleTask(index) {
-  clickSound.currentTime = 0;
-  clickSound.play();
-  progress[index] = !progress[index];
-  if (progress[index]) moveTaskToBottom(index);
-  if (progress.every(p => p)) confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
-  saveProgress();
-  updateView();
+function resetTasks() {
+  document.querySelectorAll('.task').forEach(task => task.classList.remove('completed'));
 }
 
-function moveTaskToBottom(index) {
-  const [task] = tasks.splice(index, 1);
-  const [status] = progress.splice(index, 1);
-  tasks.push(task);
-  progress.push(status);
-}
+document.getElementById('resetButton').addEventListener('click', resetTasks);
 
-function saveProgress() {
-  localStorage.setItem('taskProgress', JSON.stringify(progress));
-  localStorage.setItem('taskOrder', JSON.stringify(tasks));
-}
-
-function loadProgress() {
-  const savedProgress = JSON.parse(localStorage.getItem('taskProgress'));
-  const savedTasks = JSON.parse(localStorage.getItem('taskOrder'));
-  if (savedProgress && savedTasks) {
-    progress = savedProgress;
-    tasks.length = 0;
-    tasks.push(...savedTasks);
-  } else {
-    progress = Array(tasks.length).fill(false);
-  }
-}
-
-function resetProgress() {
-  progress = Array(tasks.length).fill(false);
-  saveProgress();
-  updateView();
-}
-
-function updateView() {
-  renderTasks();
-  renderDots();
-}
-
-resetButton.addEventListener('click', resetProgress);
-
-loadProgress();
-updateView();
+renderTasks();
 </script>
 </body>
 </html>
