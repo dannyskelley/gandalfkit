@@ -4,133 +4,29 @@ description: 'daily'
 permalink: 'daily/'
 eleventyNavigation:
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Happy or Die Trying</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
   <style>
-    * {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: white;
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 20px;
-      background-color: #101010;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .contentContainer {
-      width: 100%;
-      max-width: 500px;
-    }
-
-    .progressDots {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 20px 0;
-      justify-content: center;
-    }
-
-    .dot {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background-color: #2c2c2e;
-    }
-
-    .dot.completed {
-      background-color: #30d158;
-    }
-
-    label.container {
-      display: flex;
-      align-items: center;
-      font-size: 1.05rem;
-      margin-bottom: 12px;
-      cursor: pointer;
-      padding: 10px 16px;
-      background: linear-gradient(145deg, #1a1a1c, #141414);
-      border-radius: 16px;
-      box-shadow: 6px 6px 12px #0c0c0d, -6px -6px 12px #18181a;
-      transition: all 0.1s ease-in-out;
-    }
-
-    label.container:active {
-      box-shadow: inset 4px 4px 8px #0c0c0d, inset -4px -4px 8px #18181a;
-      transform: scale(0.98);
-    }
-
-    .container input[type="checkbox"] {
-      margin-right: 12px;
-      transform: scale(1.2);
-      accent-color: #0a84ff;
-    }
-
-    .goalContainer input[type="text"] {
-      width: 100%;
-      margin-bottom: 12px;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #444;
-      padding: 6px 4px;
-      color: white;
-      font-size: 1rem;
-    }
-
-    #resetButton {
-      background-color: #0a84ff;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      margin: 24px auto;
-      display: block;
-      border-radius: 12px;
-      font-size: 1rem;
-      cursor: pointer;
-      box-shadow: 4px 4px 8px #0c0c0d, -4px -4px 8px #18181a;
-      transition: all 0.1s ease-in-out;
-    }
-
-    #resetButton:active {
-      box-shadow: inset 3px 3px 6px #0c0c0d, inset -3px -3px 6px #18181a;
-      transform: scale(0.97);
-    }
-
-    .countdownContainer {
-      text-align: center;
-      margin-bottom: 24px;
-    }
-
-    .countdownContainer h2 {
-      color: #f2f2f7;
-      font-weight: 500;
-      margin-bottom: 4px;
-    }
-
-    .countdownDisplay {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #0a84ff;
-    }
-
-    input::placeholder {
-      color: #999;
+    * { font-family: Montserrat, sans-serif; color: #fff; box-sizing: border-box; }
+    body { background: #101010; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+    .contentContainer { width: 100%; max-width: 500px; }
+    .progressDots { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0; justify-content: center; }
+    .dot { width: 18px; height: 18px; border-radius: 50%; background: #2c2c2e; }
+    .dot.completed { background: #30d158; }
+    label.container { display: none; flex-direction: row; align-items: center; font-size: 1.05rem; margin-bottom: 12px; padding: 10px 16px; background: linear-gradient(145deg, #1a1a1c, #141414); border-radius: 16px; box-shadow: 6px 6px 12px #0c0c0d, -6px -6px 12px #18181a; transition: all 0.1s ease-in-out; }
+    label.container.show { display: flex; }
+    label.container:active { box-shadow: inset 4px 4px 8px #0c0c0d, inset -4px -4px 8px #18181a; transform: scale(0.98); }
+    .container input[type=checkbox] { margin-right: 12px; transform: scale(1.2); accent-color: #0a84ff; }
+    #resetButton { background: #0a84ff; border: none; padding: 12px 24px; margin: 24px auto; border-radius: 12px; font-size: 1rem; cursor: pointer; box-shadow: 4px 4px 8px #0c0c0d, -4px -4px 8px #18181a; transition: all 0.1s ease-in-out; }
+    #resetButton:active { box-shadow: inset 3px 3px 6px #0c0c0d, inset -3px -3px 6px #18181a; transform: scale(0.97); }
+    @media (min-width: 600px) {
+      label.container { display: flex !important; }
     }
   </style>
 </head>
@@ -138,149 +34,113 @@ eleventyNavigation:
   <audio id="clickSound" src="https://www.myinstants.com/media/sounds/button-16.mp3"></audio>
   <div class="contentContainer">
     <div class="progressDots" id="progressDots"></div>
-
-    <label class="container"><input type="checkbox">Drink water and eat banana</label>
-    <label class="container"><input type="checkbox">Touch toes. Do pushups 5 min</label>
-    <label class="container"><input type="checkbox">Brush, shower, shave</label>
-    <label class="container"><input type="checkbox">Meditate 2-5 min</label>
-    <label class="container"><input type="checkbox">Clean surfaces/office</label>
-    <label class="container"><input type="checkbox">Gratitude</label>
-
-    <div class="goalContainer">
-      <label class="container"><input type="checkbox" id="topGoalsCheckbox">Top 3 Goals</label>
-    </div>
-
-    <label class="container"><input type="checkbox">Text friend or family</label>
-    <label class="container"><input type="checkbox">Eat whole foods + greens</label>
-    <label class="container"><input type="checkbox">Avoid ultra-processed foods</label>
-    <label class="container"><input type="checkbox">Walk 30 minutes</label>
-    <label class="container"><input type="checkbox">Dont doomscroll after 7pm</label>
-    <label class="container"><input type="checkbox">Put out water bottle & banana</label>
+    <div id="taskList"></div>
     <button id="resetButton">Reset Progress</button>
-
-    <div id="countdownApril26" class="countdownContainer">
-      <h2>Countdown to April 26</h2>
-      <div id="countdownApril26Display" class="countdownDisplay">Loading...</div>
-    </div>
-
-    <div id="countdownMay9" class="countdownContainer">
-      <h2>Countdown to May 9</h2>
-      <div id="countdownMay9Display" class="countdownDisplay">Loading...</div>
-    </div>
-
-    <div id="countdownMay31" class="countdownContainer">
-      <h2>Countdown to May 31</h2>
-      <div id="countdownMay31Display" class="countdownDisplay">Loading...</div>
-    </div>
-
-    <div id="countdownJuly9" class="countdownContainer">
-      <h2>Countdown to July 9</h2>
-      <div id="countdownJuly9Display" class="countdownDisplay">Loading...</div>
-    </div>
-
-    <div id="countdownAug5" class="countdownContainer">
-      <h2>Countdown to August 5</h2>
-      <div id="countdownAug5Display" class="countdownDisplay">Loading...</div>
-    </div>
   </div>
 
-  <script>
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    const dotContainer = document.getElementById('progressDots');
-    const resetButton = document.getElementById('resetButton');
-    const totalTasks = checkboxes.length;
-    const clickSound = document.getElementById('clickSound');
+<script>
+const tasks = [
+  'Drink water and eat banana',
+  'Touch toes. Do pushups 5 min',
+  'Brush, shower, shave',
+  'Meditate 2-5 min',
+  'Clean surfaces/office',
+  'Gratitude',
+  'Top 3 Goals',
+  'Text friend or family',
+  'Eat whole foods + greens',
+  'Avoid ultra-processed foods',
+  'Walk 30 minutes',
+  'Dont doomscroll after 7pm',
+  'Put out water bottle & banana'
+];
 
-    function renderDots() {
-      dotContainer.innerHTML = '';
-      checkboxes.forEach(cb => {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        if (cb.checked) dot.classList.add('completed');
-        dotContainer.appendChild(dot);
-      });
-    }
+const clickSound = document.getElementById('clickSound');
+const taskList = document.getElementById('taskList');
+const dotContainer = document.getElementById('progressDots');
+const resetButton = document.getElementById('resetButton');
 
-    function updateProgress() {
-      renderDots();
-      const completed = document.querySelectorAll('input[type="checkbox"]:checked').length;
-      if (completed === totalTasks) {
-        confetti({
-          particleCount: 200,
-          spread: 90,
-          origin: { y: 0.6 }
-        });
-      }
-      localStorage.setItem('taskProgress', JSON.stringify(Array.from(checkboxes).map(cb => cb.checked)));
-      saveGoals();
-    }
+let progress = [];
+const maxVisibleTasks = 5;
 
-    function loadProgress() {
-      const saved = JSON.parse(localStorage.getItem('taskProgress'));
-      if (saved) {
-        checkboxes.forEach((cb, i) => cb.checked = saved[i]);
-      }
-      renderDots();
-    }
+function visibleCount() {
+  return Math.min(progress.filter(p => p).length + maxVisibleTasks, tasks.length);
+}
 
-    function saveGoals() {
-      const goals = Array.from(document.querySelectorAll('.goalContainer input[type="text"]')).map(input => input.value);
-      localStorage.setItem('topGoals', JSON.stringify(goals));
-    }
+function renderTasks() {
+  taskList.innerHTML = '';
+  tasks.forEach((task, index) => {
+    const label = document.createElement('label');
+    label.className = 'container';
+    if (index < visibleCount()) label.classList.add('show');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = progress[index];
+    checkbox.addEventListener('change', () => toggleTask(index));
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(task));
+    taskList.appendChild(label);
+  });
+}
 
-    function loadGoals() {
-      const savedGoals = JSON.parse(localStorage.getItem('topGoals'));
-      if (savedGoals) {
-        document.querySelectorAll('.goalContainer input[type="text"]').forEach((input, i) => input.value = savedGoals[i] || '');
-        document.getElementById('topGoalsCheckbox').checked = savedGoals.some(g => g);
-      }
-    }
+function renderDots() {
+  dotContainer.innerHTML = '';
+  tasks.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (progress[index] ? ' completed' : '');
+    dotContainer.appendChild(dot);
+  });
+}
 
-    function resetProgress() {
-      checkboxes.forEach(cb => cb.checked = false);
-      document.querySelectorAll('.goalContainer input[type="text"]').forEach(input => input.value = '');
-      updateProgress();
-    }
+function toggleTask(index) {
+  clickSound.currentTime = 0;
+  clickSound.play();
+  progress[index] = !progress[index];
+  if (progress[index]) moveTaskToBottom(index);
+  if (progress.every(p => p)) confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
+  saveProgress();
+  updateView();
+}
 
-    function updateCountdown(targetDateStr, displayId) {
-      const now = new Date();
-      const target = new Date(targetDateStr);
-      const diff = target - now;
+function moveTaskToBottom(index) {
+  const [task] = tasks.splice(index, 1);
+  const [status] = progress.splice(index, 1);
+  tasks.push(task);
+  progress.push(status);
+}
 
-      const display = document.getElementById(displayId);
-      if (diff < 0) {
-        display.textContent = 'The date has passed!';
-        return;
-      }
+function saveProgress() {
+  localStorage.setItem('taskProgress', JSON.stringify(progress));
+  localStorage.setItem('taskOrder', JSON.stringify(tasks));
+}
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+function loadProgress() {
+  const savedProgress = JSON.parse(localStorage.getItem('taskProgress'));
+  const savedTasks = JSON.parse(localStorage.getItem('taskOrder'));
+  if (savedProgress && savedTasks) {
+    progress = savedProgress;
+    tasks.length = 0;
+    tasks.push(...savedTasks);
+  } else {
+    progress = Array(tasks.length).fill(false);
+  }
+}
 
-      display.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
+function resetProgress() {
+  progress = Array(tasks.length).fill(false);
+  saveProgress();
+  updateView();
+}
 
-    function updateCountdowns() {
-      updateCountdown('2025-04-26T00:00:00', 'countdownApril26Display');
-      updateCountdown('2025-05-09T00:00:00', 'countdownMay9Display');
-      updateCountdown('2025-05-31T00:00:00', 'countdownMay31Display');
-      updateCountdown('2025-07-09T00:00:00', 'countdownJuly9Display');
-      updateCountdown('2025-08-05T00:00:00', 'countdownAug5Display');
-    }
+function updateView() {
+  renderTasks();
+  renderDots();
+}
 
-    setInterval(updateCountdowns, 1000);
-    checkboxes.forEach(cb => cb.addEventListener('change', () => {
-      clickSound.currentTime = 0;
-      clickSound.play();
-      updateProgress();
-    }));
-    resetButton.addEventListener('click', resetProgress);
-    loadProgress();
-    loadGoals();
-    updateCountdowns();
-  </script>
+resetButton.addEventListener('click', resetProgress);
 
-  {% include 'components/apps/standup.html' %}
+loadProgress();
+updateView();
+</script>
 </body>
 </html>
