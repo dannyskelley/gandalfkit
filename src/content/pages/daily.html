@@ -13,85 +13,84 @@ eleventyNavigation:
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     * { font-family: 'Press Start 2P', cursive; box-sizing: border-box; }
-    body { background: #101010; margin: 0; padding: 20px; }
-    .task { align-items: center; margin: 0px 0px 30px 0px; font-size: 20px; text-transform: uppercase; cursor: pointer; }
+    body { background: #101010; margin: 0; padding: 20px; min-height: 100vh; overflow-y: auto; }
+    .task { display: block; margin: 0px 0px 10px 0px; font-size: 1rem; text-transform: uppercase; cursor: pointer; }
     .task input { display: none; }
-    .circle { width: 20px; height: 20px; margin-right: 10px; border-radius: 50%; background: crimson;  transition: background 0.3s; }
-    .text { color: crimson; transition: color 0.3s; }
+    .circle { display: inline-block; vertical-align: middle; width: 20px; height: 20px; margin-right: 10px; border-radius: 50%; background: crimson; transition: background 0.3s; }
+    .text { display: inline-block; vertical-align: middle; color: crimson; transition: color 0.3s; }
     input:checked + .circle { background: springgreen; }
     input:checked + .circle + .text { color: white; }
- 
+    .instructions { color: gray; font-size: 0.75rem; margin-bottom: 20px; text-align: center; }
   </style>
 </head>
 <body>
 
 
-
 <div class="taskList">
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Drink 16 oz water</div>
+    <span class="circle"></span>
+    <span class="text">Drink water and eat banana</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Touch toes. 10 push ups.</div>
+    <span class="circle"></span>
+    <span class="text">Touch toes. Do pushups 5 min</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Brush teeth</div>
+    <span class="circle"></span>
+    <span class="text">Brush, shower, shave</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Meditate 2 min</div>
+    <span class="circle"></span>
+    <span class="text">Meditate 2-5 min</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Clean surfaces/office</div>
+    <span class="circle"></span>
+    <span class="text">Clean surfaces/office</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Gratitude</div>
+    <span class="circle"></span>
+    <span class="text">Gratitude</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Top 3 Goals</div>
+    <span class="circle"></span>
+    <span class="text">Top 3 Goals</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Text friend or family</div>
+    <span class="circle"></span>
+    <span class="text">Text friend or family</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Eat whole foods + greens</div>
+    <span class="circle"></span>
+    <span class="text">Eat whole foods + greens</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Avoid ultra-processed foods</div>
+    <span class="circle"></span>
+    <span class="text">Avoid ultra-processed foods</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Walk 30 minutes</div>
+    <span class="circle"></span>
+    <span class="text">Walk 30 minutes</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Don't doomscroll after 7pm</div>
+    <span class="circle"></span>
+    <span class="text">Don't doomscroll after 7pm</span>
   </label>
   <label class="task">
     <input type="checkbox">
-    <div class="circle"></div>
-    <div class="text">Put out water bottle & banana</div>
+    <span class="circle"></span>
+    <span class="text">Put out water bottle & banana</span>
   </label>
 </div>
 
