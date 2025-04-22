@@ -14,9 +14,9 @@ eleventyNavigation:
   <style>
     * { font-family: 'Press Start 2P', cursive; box-sizing: border-box; }
     body { background: #101010; margin: 0; padding: 20px; }
-    .task { display: flex; align-items: center; gap: 10px; margin: 0px 0px 30px 0px; font-size: 1rem; text-transform: uppercase; cursor: pointer; }
+    .task { display: flex; align-items: center; margin: 0px 0px 30px 0px; font-size: 18px; text-transform: uppercase; cursor: pointer; }
     .task input { display: none; }
-    .circle { width: 20px; height: 20px; border-radius: 50%; background: crimson; flex-shrink: 0; transition: background 0.3s; }
+    .circle { width: 20px; height: 20px; margin-right: 10px; border-radius: 50%; background: crimson; flex-shrink: 0; transition: background 0.3s; }
     .text { color: crimson; transition: color 0.3s; }
     input:checked + .circle { background: springgreen; }
     input:checked + .circle + .text { color: white; }
@@ -31,22 +31,22 @@ eleventyNavigation:
   <label class="task">
     <input type="checkbox">
     <div class="circle"></div>
-    <div class="text">Drink water and eat banana</div>
+    <div class="text">Drink 16 oz water</div>
   </label>
   <label class="task">
     <input type="checkbox">
     <div class="circle"></div>
-    <div class="text">Touch toes. Do pushups 5 min</div>
+    <div class="text">Touch toes. 10 push ups.</div>
   </label>
   <label class="task">
     <input type="checkbox">
     <div class="circle"></div>
-    <div class="text">Brush, shower, shave</div>
+    <div class="text">Brush teeth</div>
   </label>
   <label class="task">
     <input type="checkbox">
     <div class="circle"></div>
-    <div class="text">Meditate 2-5 min</div>
+    <div class="text">Meditate 2 min</div>
   </label>
   <label class="task">
     <input type="checkbox">
