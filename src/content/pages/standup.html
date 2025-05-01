@@ -1,0 +1,32 @@
+---
+title: 'STAND UP'
+description: 'STAND UP'
+permalink: 'standup/'
+eleventyNavigation:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAND UP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Press Start 2P', cursive;  }
+    body { background: #101010; margin: 0; padding: 20px; overflow-y: hidden;overflow-x: hidden; overflow: hidden; }
+    .task { display: block; margin: 10px 0px 30px 0px; font-size: 16px!important; text-transform: uppercase; cursor: pointer; }
+    .task input { display: none; }
+    .circle { display: inline-block; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px; border-radius: 50%; background: red; transition: background 0.3s; }
+    .text { display: inline-block; vertical-align: middle; color: red; transition: color 0.3s; }
+    input:checked + .circle { background: springgreen; }
+    input:checked + .circle + .text { color: white; }
+  
+  </style>
+</head>
+<body>
+
+
+{% include 'components/apps/standup.html' %}
+   
+</body>
+</html>

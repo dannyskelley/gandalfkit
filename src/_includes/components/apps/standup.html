@@ -1,7 +1,11 @@
-<style>
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Reminder</title>
+  <style>
+    body { color: white; background: #111; font-family: sans-serif; margin: 0; padding: 0; }
 
     .alert {
       position: fixed;
@@ -78,7 +82,8 @@
       }
     }
   </style>
-<!--
+</head>
+<body>
   <div class="content">
     <h1>Welcome to Your Health Reminder</h1>
     <p>This page will remind you to stand up every hour,<br>and to watch the sunrise 🌅 and sunset 🌇.</p>
@@ -87,7 +92,7 @@
       <button onclick="triggerDemo('🌇 SUNSET CHECK-IN!')">🌇 Demo Sunset</button>
       <button onclick="triggerDemo(randomStandUpMessage())">⏰ Demo Hourly Alert</button>
     </div>
-  </div>-->
+  </div>
 
   <div class="alert" id="alertBox">
     <div id="alertMessage">STAND UP</div>
@@ -97,18 +102,29 @@
   <script>
     const alertBox = document.getElementById('alertBox');
     const alertMessage = document.getElementById('alertMessage');
-
     let originalTitle = document.title;
     let titleInterval;
 
-    const youtubeVideos = [
-      "https://www.youtube.com/watch?v=8DyziWtkfBw", // Nirvana - Smells Like Teen Spirit
-      "https://www.youtube.com/watch?v=htv6UFJ9V3Q", // Green Day - Basket Case
-      "https://www.youtube.com/watch?v=xh-5FI21s6M", // Smashing Pumpkins - 1979
-      "https://www.youtube.com/watch?v=K7l5ZeVVoCA", // Blink-182 - All the Small Things
-      "https://www.youtube.com/watch?v=rhzmNRtIp8k", // Foo Fighters - Everlong
-      "https://www.youtube.com/watch?v=9Ht5RZpzPqw"  // No Doubt - Don't Speak
-    ];
+    const youtubePlaylists = {
+      emo: [
+        { title: "Dashboard Confessional – Screaming Infidelities", url: "https://www.youtube.com/watch?v=tWgdbMOyLcc" },
+        { title: "My Chemical Romance – I'm Not Okay", url: "https://www.youtube.com/watch?v=dhZTNgAs4Fc" },
+        { title: "Taking Back Sunday – Cute Without The ‘E’", url: "https://www.youtube.com/watch?v=MDWhDmc5gVA" },
+        { title: "Jimmy Eat World – The Middle", url: "https://www.youtube.com/watch?v=oKsxPW6i3pM" }
+      ],
+      grunge: [
+        { title: "Nirvana – Smells Like Teen Spirit", url: "https://www.youtube.com/watch?v=hTWKbfoikeg" },
+        { title: "Soundgarden – Black Hole Sun", url: "https://www.youtube.com/watch?v=3mbBbFH9fAg" },
+        { title: "Stone Temple Pilots – Interstate Love Song", url: "https://www.youtube.com/watch?v=Eo-KmOd3i7s" },
+        { title: "Pearl Jam – Alive", url: "https://www.youtube.com/watch?v=VbhsYC4gKy4" }
+      ],
+      punk: [
+        { title: "Green Day – Basket Case", url: "https://www.youtube.com/watch?v=NUTGr5t3MoY" },
+        { title: "Blink-182 – All the Small Things", url: "https://www.youtube.com/watch?v=9Ht5RZpzPqw" },
+        { title: "The Offspring – Self Esteem", url: "https://www.youtube.com/watch?v=eeWjzBHUdsI" },
+        { title: "No Doubt – Just a Girl", url: "https://www.youtube.com/watch?v=PHzOOQfhPFg" }
+      ]
+    };
 
     function flashTitle(message) {
       let visible = true;
@@ -123,9 +139,17 @@
       document.title = originalTitle;
     }
 
+    function getRandomSong() {
+      const categories = Object.keys(youtubePlaylists);
+      const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+      const songs = youtubePlaylists[randomCategory];
+      return songs[Math.floor(Math.random() * songs.length)];
+    }
+
     function play90sMusic() {
-      const url = youtubeVideos[Math.floor(Math.random() * youtubeVideos.length)] + "?autoplay=1";
-      window.open(url, "_blank");
+      const { title, url } = getRandomSong();
+      console.log("Now playing:", title);
+      window.open(url + "?autoplay=1", "_blank");
     }
 
     function showAlert(message) {
@@ -202,3 +226,5 @@
 
     init();
   </script>
+</body>
+</html>
