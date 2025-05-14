@@ -1,0 +1,160 @@
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * { 
+      font-family: 'Press Start 2P', cursive;
+      box-sizing: border-box;
+    }
+    body { 
+      background: #000000; 
+      margin: 0; 
+      padding: 15px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      
+      padding: 30px;
+      
+      background-color: #0a0a0a;
+    }
+    .title {
+      color: #ff0000;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 18px;
+      text-shadow: 2px 2px 0px #500000;
+    }
+    .taskList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .task { 
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+    .task:hover {
+      background: #1a1a1a;
+    }
+    .task input { 
+      display: none; 
+    }
+    .circle { 
+      display: inline-block;
+      min-width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      border-radius: 50%;
+      background: #ff0000;
+      transition: all 0.3s;
+      border: 2px solid #ff5555;
+    }
+    .text { 
+      display: inline-block;
+      color: #ff0000;
+      transition: all 0.3s;
+      line-height: 1.4;
+    }
+    input:checked + .circle { 
+      background: #00ff66;
+      border-color: #00aa44;
+      box-shadow: 0 0 10px #00ff66;
+    }
+    input:checked + .circle + .text { 
+      color: #ffffff;
+      text-shadow: 0 0 5px #ffffff;
+    }
+    .progress {
+      height: 20px;
+      margin-top: 25px;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #ff0000, #ff6600);
+      transition: width 0.5s;
+    }
+  </style>
+
+  <div class="container">
+   
+    <div class="taskList">
+      <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Drink Water</span>
+      </label>
+      <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Touch toes</span>
+      </label>
+          <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">10 Pushups</span>
+      </label>
+      <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Brush teeth</span>
+      </label>
+      <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Meditate 2 min</span>
+      </label>
+      <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Clean surfaces</span>
+      </label>
+      <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Gratitude</span>
+      </label>
+          <label class="task">
+        <input type="checkbox" class="task-checkbox">
+        <span class="circle"></span>
+        <span class="text">Leads</span>
+      </label>
+    </div>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.task-checkbox');
+    const progressBar = document.querySelector('.progress-bar');
+    
+    function updateProgress() {
+      const total = checkboxes.length;
+      let completed = 0;
+      
+      checkboxes.forEach(checkbox => {
+        if (checkbox.checked) completed++;
+      });
+      
+      const percentage = (completed / total) * 100;
+      progressBar.style.width = percentage + '%';
+    }
+    
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', updateProgress);
+    });
+  </script>
