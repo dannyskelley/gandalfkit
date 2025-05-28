@@ -51,20 +51,16 @@
 
 
 
-<script>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://designgandalf.com/#business",
-  "name": "Design Gandalf",
-  "description": "Professional custom web design and development services in Detroit, Michigan. Fast, secure, custom-coded websites starting at $150/month with unlimited edits and 24/7 support.",
-  "url": "https://designgandalf.com",
-  "logo": "https://designgandalf.com/assets/images/logo.png",
-  "image": "https://designgandalf.com/assets/images/home2.jpg",
-  "telephone": "+13138017388",
-  "priceRange": "$150-$3500",
+  "@id": "https://designgandalf.com/",
+  "name": "Design Gandalf - Detroit Web Design",
+  "image": "https://designgandalf.com/assets/images/logo.png",
+  "url": "https://designgandalf.com/",
+  "telephone": "+1-313-801-7388",
   "email": "info@designgandalf.com",
-  "foundingDate": "2020",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Detroit",
@@ -73,20 +69,69 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "42.3314",
-    "longitude": "-83.0458"
+    "latitude": 42.3314,
+    "longitude": -83.0458
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 15
+  },
+  "priceRange": "$150-$3500",
+  "serviceType": [
+    "Detroit Web Design",
+    "Custom Website Design Michigan",
+    "Small Business Web Designer Detroit",
+    "Professional Website Design",
+    "Web Design Metro Detroit"
+  ],
+  "description": "Design Gandalf offers Detroit web design services specializing in custom website design Michigan. Small business web designer Detroit providing professional website design $150/month. Fast, hand-coded websites serving web design Metro Detroit area with 1-7 day delivery.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Design Services",
+    "itemListElement": [
+      { 
+        "@type": "Offer", 
+        "itemOffered": { 
+          "@type": "Service", 
+          "name": "Professional Website Design $150/Month" 
+        },
+        "price": "150",
+        "priceCurrency": "USD"
+      },
+      { 
+        "@type": "Offer", 
+        "itemOffered": { 
+          "@type": "Service", 
+          "name": "Custom Website Design Michigan - Lump Sum" 
+        },
+        "price": "3500",
+        "priceCurrency": "USD"
+      },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Responsive Mobile Design" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Hosting & Maintenance" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Optimization" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Unlimited Website Edits" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "24/7 Customer Support" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Small Business Website Design" } }
+    ]
   },
   "areaServed": [
-    {
-      "@type": "State",
-      "name": "Michigan"
-    },
     {
       "@type": "City",
       "name": "Detroit"
     },
     {
-      "@type": "City", 
+      "@type": "City",
       "name": "Troy"
     },
     {
@@ -96,68 +141,30 @@
     {
       "@type": "City",
       "name": "Ferndale"
+    },
+    {
+      "@type": "City",
+      "name": "Dearborn"
+    },
+    {
+      "@type": "City",
+      "name": "Warren"
+    },
+    {
+      "@type": "State",
+      "name": "Michigan"
     }
   ],
-  "serviceArea": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": "42.3314",
-      "longitude": "-83.0458"
-    },
-    "geoRadius": "50000"
+  "founder": {
+    "@type": "Person",
+    "name": "Danny Skelley"
   },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Web Design Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Monthly Website Package",
-          "description": "5-page professional custom website with hosting, unlimited edits, and 24/7 support"
-        },
-        "price": "150",
-        "priceCurrency": "USD",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "150",
-          "priceCurrency": "USD",
-          "billingIncrement": "P1M"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Lump Sum Website Package",
-          "description": "10-page custom website with lifetime updates and premium features"
-        },
-        "price": "3500",
-        "priceCurrency": "USD"
-      }
-    ]
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday", 
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "09:00",
-    "closes": "17:00"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "15",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
+  "numberOfEmployees": "2",
+  "foundingDate": "2020",
+  "sameAs": [
+    "https://designgandalf.com/",
+    "https://maps.app.goo.gl/zhoTGX9HB8wnhJtH6"
+  ],
   "review": [
     {
       "@type": "Review",
@@ -201,13 +208,9 @@
       "reviewBody": "Built my website fast and just how I wanted it Danny does exceptional work I will recommend him to all my friends and family!!",
       "datePublished": "2024-12-05"
     }
-  ],
-  "sameAs": [
-    "https://maps.app.goo.gl/zhoTGX9HB8wnhJtH6"
   ]
 }
 </script>
-
 
  
     </head>
