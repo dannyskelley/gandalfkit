@@ -50,7 +50,6 @@
         <title>{{ title }}</title>
 
 
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,7 +64,10 @@
     "@type": "PostalAddress",
     "addressLocality": "Detroit",
     "addressRegion": "MI",
-    "addressCountry": "US"
+    "addressCountry": {
+      "@type": "Country",
+      "name": "US"
+    }
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -75,9 +77,11 @@
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "17:00"
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
     }
   ],
   "aggregateRating": {
@@ -86,131 +90,78 @@
     "reviewCount": 15
   },
   "priceRange": "$150-$3500",
-  "serviceType": [
-    "Detroit Web Design",
-    "Custom Website Design Michigan",
-    "Small Business Web Designer Detroit",
-    "Professional Website Design",
-    "Web Design Metro Detroit"
-  ],
   "description": "Design Gandalf offers Detroit web design services specializing in custom website design Michigan. Small business web designer Detroit providing professional website design $150/month. Fast, hand-coded websites serving web design Metro Detroit area with 1-7 day delivery.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Web Design Services",
     "itemListElement": [
-      { 
-        "@type": "Offer", 
-        "itemOffered": { 
-          "@type": "Service", 
-          "name": "Professional Website Design $150/Month" 
-        },
-        "price": "150",
-        "priceCurrency": "USD"
+      {
+        "@type": "Offer",
+        "price": 150,
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Professional Website Design $150/Month"
+        }
       },
-      { 
-        "@type": "Offer", 
-        "itemOffered": { 
-          "@type": "Service", 
-          "name": "Custom Website Design Michigan - Lump Sum" 
-        },
-        "price": "3500",
-        "priceCurrency": "USD"
+      {
+        "@type": "Offer",
+        "price": 3500,
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Website Design Michigan - Lump Sum"
+        }
       },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Development" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Responsive Mobile Design" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Hosting & Maintenance" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Optimization" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Unlimited Website Edits" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "24/7 Customer Support" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Small Business Website Design" } }
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Custom Web Development" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Responsive Mobile Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Website Hosting & Maintenance" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "SEO Optimization" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Unlimited Website Edits" }
+      }
     ]
   },
   "areaServed": [
-    {
-      "@type": "City",
-      "name": "Detroit"
-    },
-    {
-      "@type": "City",
-      "name": "Troy"
-    },
-    {
-      "@type": "City",
-      "name": "Royal Oak"
-    },
-    {
-      "@type": "City",
-      "name": "Ferndale"
-    },
-    {
-      "@type": "City",
-      "name": "Dearborn"
-    },
-    {
-      "@type": "City",
-      "name": "Warren"
-    },
-    {
-      "@type": "State",
-      "name": "Michigan"
-    }
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Danny Skelley"
-  },
-  "numberOfEmployees": "2",
-  "foundingDate": "2020",
-  "sameAs": [
-    "https://designgandalf.com/",
-    "https://maps.app.goo.gl/zhoTGX9HB8wnhJtH6"
-  ],
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Paul Blossom"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Listen folks I think it's a shame that I can only give Danny five stars. I would give him 25 stars if I could just a talented guy such a great demeanor we just love his graphic design knowledge and the way he did. Our website is just outstanding. I highly recommend Danny Skelley for all your digital website needs.",
-      "datePublished": "2024-10-15"
-    },
-    {
-      "@type": "Review", 
-      "author": {
-        "@type": "Person",
-        "name": "Shirley"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Thank you for an easy, stress free experience! I got exactly what I needed and wanted for my website faster than I imagined! 10/10!",
-      "datePublished": "2024-11-20"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person", 
-        "name": "Lunden"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5", 
-        "bestRating": "5"
-      },
-      "reviewBody": "Built my website fast and just how I wanted it Danny does exceptional work I will recommend him to all my friends and family!!",
-      "datePublished": "2024-12-05"
-    }
+    { "@type": "City", "name": "Detroit" },
+    { "@type": "City", "name": "Royal Oak" },
+    { "@type": "City", "name": "Ferndale" },
+    { "@type": "City", "name": "Dearborn" },
+    { "@type": "City", "name": "Warren" },
+    { "@type": "City", "name": "Southfield" },
+    { "@type": "City", "name": "Livonia" },
+    { "@type": "City", "name": "Novi" },
+    { "@type": "City", "name": "Ann Arbor" },
+    { "@type": "City", "name": "Sterling Heights" },
+    { "@type": "City", "name": "Troy" },
+    { "@type": "City", "name": "Pontiac" },
+    { "@type": "City", "name": "Bloomfield Hills" },
+    { "@type": "City", "name": "Farmington Hills" },
+    { "@type": "City", "name": "West Bloomfield" },
+    { "@type": "City", "name": "Rochester Hills" },
+    { "@type": "City", "name": "Clinton Township" },
+    { "@type": "City", "name": "Macomb" },
+    { "@type": "City", "name": "Oak Park" },
+    { "@type": "City", "name": "Grosse Pointe" },
+    { "@type": "City", "name": "Hamtramck" },
+    { "@type": "City", "name": "Hazel Park" }
   ]
 }
 </script>
+
 
  
     </head>
