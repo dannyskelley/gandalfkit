@@ -49,15 +49,357 @@
 
         <title>{{ title }}</title>
 
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFNNXE1TTP"></script>
-          <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-  
-          gtag('config', 'G-MFNNXE1TTP');
-          </script>
+         <script>
+          <!-- Place this schema markup in the <head> section of your website -->
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://designgandalf.com/#business",
+  "name": "Design Gandalf",
+  "description": "Professional custom web design and development services in Detroit, Michigan. Fast, secure, custom-coded websites starting at $150/month with unlimited edits and 24/7 support.",
+  "url": "https://designgandalf.com",
+  "logo": "https://designgandalf.com/assets/images/logo.png",
+  "image": "https://designgandalf.com/assets/images/home2.jpg",
+  "telephone": "+13138017388",
+  "priceRange": "$150-$3500",
+  "email": "info@designgandalf.com",
+  "foundingDate": "2020",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Detroit",
+    "addressRegion": "MI",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "42.3314",
+    "longitude": "-83.0458"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Michigan"
+    },
+    {
+      "@type": "City",
+      "name": "Detroit"
+    },
+    {
+      "@type": "City", 
+      "name": "Troy"
+    },
+    {
+      "@type": "City",
+      "name": "Royal Oak"
+    },
+    {
+      "@type": "City",
+      "name": "Ferndale"
+    }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "42.3314",
+      "longitude": "-83.0458"
+    },
+    "geoRadius": "50000"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Design Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Monthly Website Package",
+          "description": "5-page professional custom website with hosting, unlimited edits, and 24/7 support"
+        },
+        "price": "150",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "150",
+          "priceCurrency": "USD",
+          "billingIncrement": "P1M"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lump Sum Website Package",
+          "description": "10-page custom website with lifetime updates and premium features"
+        },
+        "price": "3500",
+        "priceCurrency": "USD"
+      }
+    ]
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday", 
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "15",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Paul Blossom"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Listen folks I think it's a shame that I can only give Danny five stars. I would give him 25 stars if I could just a talented guy such a great demeanor we just love his graphic design knowledge and the way he did. Our website is just outstanding. I highly recommend Danny Skelley for all your digital website needs.",
+      "datePublished": "2024-10-15"
+    },
+    {
+      "@type": "Review", 
+      "author": {
+        "@type": "Person",
+        "name": "Shirley"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Thank you for an easy, stress free experience! I got exactly what I needed and wanted for my website faster than I imagined! 10/10!",
+      "datePublished": "2024-11-20"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person", 
+        "name": "Lunden"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5", 
+        "bestRating": "5"
+      },
+      "reviewBody": "Built my website fast and just how I wanted it Danny does exceptional work I will recommend him to all my friends and family!!",
+      "datePublished": "2024-12-05"
+    }
+  ],
+  "sameAs": [
+    "https://maps.app.goo.gl/zhoTGX9HB8wnhJtH6"
+  ]
+}
+</script>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom Web Design Services",
+  "description": "Professional custom web design and development for small businesses. Hand-coded websites that are fast, secure, and mobile-responsive.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Design Gandalf",
+    "@id": "https://designgandalf.com/#business"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Michigan"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Design Packages",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Professional Website Design",
+          "description": "Custom coded 5-page website with unlimited edits and hosting included"
+        },
+        "price": "150",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2025-01-01"
+      }
+    ]
+  },
+  "serviceType": [
+    "Web Design",
+    "Web Development", 
+    "Custom Website Creation",
+    "Small Business Web Design",
+    "Responsive Web Design"
+  ],
+  "category": "Web Design Services"
+}
+</script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://designgandalf.com/#organization",
+  "name": "Design Gandalf",
+  "url": "https://designgandalf.com",
+  "logo": "https://designgandalf.com/assets/images/logo.png",
+  "description": "Detroit-based web design team specializing in custom, hand-coded websites for small businesses across the United States.",
+  "foundingDate": "2020",
+  "numberOfEmployees": "2",
+  "slogan": "You Deserve a Better Website",
+  "telephone": "+13138017388",
+  "email": "info@designgandalf.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Detroit",
+    "addressRegion": "Michigan",
+    "addressCountry": "United States"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+13138017388",
+    "contactType": "Customer Service",
+    "email": "info@designgandalf.com",
+    "availableLanguage": "English"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Danny Skelley"
+  },
+  "knowsAbout": [
+    "Web Design",
+    "Web Development",
+    "SEO",
+    "Custom Coding",
+    "Small Business Marketing",
+    "Responsive Design"
+  ]
+}
+</script>
+
+<!-- Website Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://designgandalf.com/#website",
+  "url": "https://designgandalf.com",
+  "name": "Design Gandalf - Professional Web Design Detroit",
+  "description": "Custom web design and development services in Detroit, Michigan. Fast, professional websites starting at $150/month.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://designgandalf.com/#organization"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://designgandalf.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a website cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our websites start at $150 per month for a standard 5-page small business website. We include free hosting, unlimited edits, 24/7 support, and are based in the USA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use WordPress or page builders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We custom code everything ourself by hand in Detroit, MI. We don't use wordpress or pagebuilders like Wix, Squarespace or Weebly. This means your site is more secure and less prone to hacking since there is no database."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "How long does it take to build a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1-7 Days. Depending on the size of the website. Less pages take less time. A 5 page site typically takes under 7 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer unlimited edits?",
+      "acceptedAnswer": {
+        "@type": "Answer", 
+        "text": "Yes! Unlimited edits are included without any extra fees. Simply contact us and we will make the change for you quickly so you don't have to."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer a money back guarantee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer a 30 Day Money Back Guarantee. If you are not happy for any reason we will refund every penny, no questions asked. We stand by our quality service and have 5 star Google reviews."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema (for inner pages) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://designgandalf.com"
+    },
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Pricing",
+      "item": "https://designgandalf.com/pricing"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Contact",
+      "item": "https://designgandalf.com/contact"
+    }
+  ]
+}
+</script>
+         </script>>
  
     </head>
     <body>
