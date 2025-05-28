@@ -105,18 +105,17 @@
     #gallery-1374 .cs-picture {
         width: 100%;
         /* 344px - 420px */
-        height: clamp(15.5rem, 30vw, 26.25rem);
+        height: auto;
         margin: auto;
         border-radius: 1.5rem;
         display: block;
-        position: relative;
-        overflow: hidden;
+   
     }
     #gallery-1374 .cs-picture img {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-        position: absolute;
+        height: auto;
+        
+        
         top: 0;
         left: 0;
     }
@@ -222,9 +221,9 @@
 /* In Between - 600px */
 @media only screen and (min-width: 37.5rem) {
     #gallery-1374 {margin: 100px 0px;}
-    .cs-content {margin-bottom: 100px;}
+   
     #gallery-1374 .cs-item {
-        grid-column: span 6;
+        grid-column: span 12;
     }
 }
 
@@ -234,15 +233,39 @@
 <section id="gallery-1374">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Our Work</span>
-            <h2 class="cs-title">Affordable Website Design</h2>
-            <p class="cs-text">
-                We specialize in small business web design and development. Every line of code is written by hand to ensure the best performance, which helps bring in more customers to your site and bring more revenue to your business.
-            </p>
+            <span class="cs-title">Our Work</span>
+  
+       
         </div>
         <ul class="cs-image-group">
 
 
+
+            
+            <li class="cs-item">
+                <a target="_blank" href="https://tuesdaymusicaleofdetroit.org/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-tuesday.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-tuesday.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/social-tuesday.jpg" alt="modern house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Tuesday Musicale of Detroit</h3>
+                            <span class="cs-desc">tuesdaymusicaleofdetroit.org</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+
+
+
+            
 
 
 
@@ -250,14 +273,14 @@
             <li class="cs-item">
                 <a target="_blank" href="https://susiesharak.com/" class="cs-link">
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/susie.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/susie.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/susie.jpg" alt="appliance" width="346" height="346">
+                        <source media="(max-width: 600px)" srcset="/assets/images/susie-social.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/susie-social.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/susie-social.jpg" alt="appliance" width="346" height="346">
                     </picture>
                     <div class="cs-item-text">
                         <div class="cs-flex">
                             <h3 class="cs-h3">Susie Sharak Realty</h3>
-                            <span class="cs-desc">susiesharakrealty.com</span>
+                            <span class="cs-desc">susiesharak.com</span>
                         </div>
                         <picture class="cs-icon-wrapper">
                             <img class="cs-icon" decoding="async"
@@ -269,19 +292,18 @@
             </li>
 
 
-
-            <!-- Card Mia -->
-            <li class="cs-item">
-                <a target="_blank" href="https://miaglow.netlify.app/" class="cs-link">
+            
+                   <li class="cs-item">
+                <a target="_blank" href="https://chesaninginnmichigan.com/" class="cs-link">
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/work/mia.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/work/mia.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/work/mia.jpg" alt="modern home" width="346" height="346">
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-chesaning.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-chesaning.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/social-chesaning.jpg" alt="modern house" width="346" height="346">
                     </picture>
                     <div class="cs-item-text">
                         <div class="cs-flex">
-                            <h3 class="cs-h3">Mia Glow</h3>
-                            <span class="cs-desc">miaglowmi.com</span>
+                            <h3 class="cs-h3">Chesaningin Inn</h3>
+                            <span class="cs-desc">chesaninginnmichigan.com</span>
                         </div>
                         <picture class="cs-icon-wrapper">
                             <img class="cs-icon" decoding="async"
@@ -292,15 +314,63 @@
                 </a>
             </li>
 
-           
+             
+            <li class="cs-item">
+                <a target="_blank" href="https://tenaciousguttersystemshouston.com/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-tenacious.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-tenacious.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/social-tenacious.jpg" alt="modern house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Tenacious Gutter Systems</h3>
+                            <span class="cs-desc">tenaciousguttersystemshouston.com</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+
+
+                        <li class="cs-item">
+                <a target="_blank" href="https://abstractconstructionllc.com/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-abstract.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-abstract.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/social-abstract.jpg" alt="modern house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Abstract Construction LLC</h3>
+                            <span class="cs-desc">abstractconstructionllc.com</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+
+
+            
+
+
+
             
             <!-- Card CDR -->
-            <li class="cs-item">
+            <li class="cs-item" >
                 <a target="_blank" href="https://detroitsewer.net/" class="cs-link">
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/detroitsewer.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/detroitsewer.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/detroitsewer.jpg" alt="modern home" width="346" height="346">
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-detroit-sewer.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-detroit-sewer.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/social-detroit-sewer.jpg" alt="modern home" width="346" height="346">
                     </picture>
                     <div class="cs-item-text">
                         <div class="cs-flex">
@@ -319,12 +389,12 @@
 
 
             <!-- Card Law  -->
-            <li class="cs-item">
+            <li class="cs-item" >
                 <a target="_blank" href="https://8foldyogadetroit.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/8fold.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/8fold.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/8fold.jpg" alt="modern home at night" width="346" height="346">
+                    <picture class="cs-picture" >
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-8fold.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-8fold.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/social-8fold.jpg" alt="modern home at night" width="346" height="346">
                     </picture>
                     <div class="cs-item-text">
                         <div class="cs-flex">
@@ -343,13 +413,35 @@
 
 
 
+             <li class="cs-item">
+                <a target="_blank" href="https://blossomtile.com/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/social-blossomtile.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/social-blossomtile.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/social-blossomtile.jpg" alt="fancy house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Blossom Tile</h3>
+                            <span class="cs-desc">Blossomtile.com</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+
+
                  <!-- Card Law  -->
                  <li class="cs-item">
                     <a target="_blank" href="https://staytruetattoostaug.com/" class="cs-link">
                         <picture class="cs-picture">
-                            <source media="(max-width: 600px)" srcset="/assets/images/staytrue.jpg">
-                            <source media="(min-width: 601px)" srcset="/assets/images/staytrue.jpg">
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/staytrue.jpg" alt="modern home at night" width="346" height="346">
+                            <source media="(max-width: 600px)" srcset="/assets/images/social-staytrue.jpg">
+                            <source media="(min-width: 601px)" srcset="/assets/images/social-staytrue.jpg">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/social-staytrue.jpg" alt="modern home at night" width="346" height="346">
                         </picture>
                         <div class="cs-item-text">
                             <div class="cs-flex">
@@ -369,202 +461,22 @@
 
 
 
-  <!-- Card Best On -->
-  <li class="cs-item">
-    <a target="_blank" href="https://strongarmpersonalsecurity.com/" class="cs-link">
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/strongarm.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/strongarm.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/strongarm.jpg" alt="modern house" width="346" height="346">
-        </picture>
-        <div class="cs-item-text">
-            <div class="cs-flex">
-                <h3 class="cs-h3">Strong Arm Personal Security</h3>
-                <span class="cs-desc">strongarmpersonalsecurity.com</span>
-            </div>
-            <picture class="cs-icon-wrapper">
-                <img class="cs-icon" decoding="async"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                alt="arrow" width="413" height="374" aria-hidden="true">
-            </picture>
-        </div>
-    </a>
-</li>
 
 
 
 
-
-             <!-- Card Best On -->
-             <li class="cs-item">
-                <a target="_blank" href="https://detroitretrotowandjunk.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/retrotow.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/retrotow.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/retrotow.jpg" alt="modern house" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Retro Tow & Junk Car Removal</h3>
-                            <span class="cs-desc">detroitretrotowandjunk.com/</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
-
-
-            <li class="cs-item">
-                <a target="_blank" href="https://tuesdaymusicaleofdetroit.org/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/tuesday.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/tuesday.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/tuesday.jpg" alt="modern house" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Tuesday Musicale of Detroit</h3>
-                            <span class="cs-desc">tuesdaymusicaleofdetroit.org</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
-
-
-
-            <li class="cs-item">
-                <a target="_blank" href="https://capitaldevelopmentdetroit.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/capital.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/capital.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/capital.jpg" alt="modern house" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Capital Development Detroit</h3>
-                            <span class="cs-desc">capitaldevelopmentdetroit.com</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
 
 
             
 
 
-            
-            <!-- Card Mia -->
-            <li class="cs-item">
-                <a target="_blank" href="https://tomatotattoowest.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/tomato.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/tomato.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/tomato.jpg" alt="modern home" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Tomato Tattoo</h3>
-                            <span class="cs-desc">tomatotattoowest.com</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
 
            
 
 
-            <!-- Card Mia -->
-            <li class="cs-item">
-                <a target="_blank" href="https://junkyrabbitlabor.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/junky.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/junky.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/junky.jpg" alt="modern home" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Junky Rabbit Labor</h3>
-                            <span class="cs-desc">junkyrabbitlabor.com</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
-            
-
-              <!-- Card Mia -->
-              <li class="cs-item">
-                <a target="_blank" href="https://ajsealcoatingllc.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/al.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/al.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/al.jpg" alt="modern home" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">A & J Sealcoating</h3>
-                            <span class="cs-desc">ajsealcoatingllc.com</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
 
 
-            <!-- Card Blossom -->
-            <li class="cs-item">
-                <a target="_blank" href="https://blossomtile.com/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/work/blossomtile.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/work/blossomtile.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/work/blossomtile.jpg" alt="fancy house" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Blossom Tile</h3>
-                            <span class="cs-desc">Blossomtile.com</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
-
-
-
-
-
-
+  
              
 
 
@@ -581,32 +493,6 @@
 
 
    
-
-
-
-             <!-- Card Best On -->
-             <li class="cs-item">
-                <a target="_blank" href="/" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/martel.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/martel.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/martel.jpg" alt="modern house" width="346" height="346">
-                    </picture>
-                    <div class="cs-item-text">
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Martel Electrical (Coming Soon)</h3>
-                            <span class="cs-desc">martelelectrical.com</span>
-                        </div>
-                        <picture class="cs-icon-wrapper">
-                            <img class="cs-icon" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
-                                            alt="arrow" width="413" height="374" aria-hidden="true">
-                        </picture>
-                    </div>
-                </a>
-            </li>
-
-
         </ul>
         <a href="#testimonials" class="cs-button-solid">Hear from our customers</a>
     </div>
