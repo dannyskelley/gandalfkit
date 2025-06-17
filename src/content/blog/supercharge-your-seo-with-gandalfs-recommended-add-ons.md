@@ -93,6 +93,3 @@ These posts help answer your customers' top questions, build trust, and expand y
 Every website we build is designed to grow with your business. These add-ons are perfect for business owners who want to get ahead without hiring a full time SEO team.
 
 They are simple, affordable, and backed by our promise: no stress, no fluff, just great design and real results.
-
-**Ready to grow your visibility and traffic?**\
-[Contact us now](#) or call (313) 801-7388 to add these SEO upgrades to your plan.
