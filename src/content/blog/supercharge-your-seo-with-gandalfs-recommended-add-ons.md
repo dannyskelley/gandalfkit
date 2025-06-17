@@ -19,13 +19,16 @@ That’s why we offer three simple add-ons designed to supercharge your visibili
 
 If you’re ready to be discovered by more people in more places, these upgrades were made for you.
 
-![](/assets/images/blog/2.jpg)
+
+
 
 
 
 ## 1. Individual Service Pages
 
 **$25 per month**
+
+![](/assets/images/blog/2.jpg)
 
 Most small business websites list all their services on a single page. The problem is that Google can’t tell which service matters most or which one to rank you for.
 
@@ -39,11 +42,18 @@ We create a dedicated page for each service you offer. That means:
 
 Whether you offer plumbing, painting, or personal training, your site will now speak Google’s language, putting your services front and center in search results.
 
-![](/assets/images/blog/3.jpg)
+
+
+
+
 
 ## 2. Local Location Pages
 
 **$25 per month**
+
+![](/assets/images/blog/3.jpg)
+
+
 
 Do you serve more than one city? Then local SEO is your secret weapon.
 
@@ -59,11 +69,14 @@ This is one of the most effective ways to show up in nearby searches and attract
 
 
 
-![](/assets/images/blog/4.jpg)
+
+
 
 ## 3. Monthly Blog Integration
 
 **$50 per month**
+
+![](/assets/images/blog/4.jpg)
 
 Google loves fresh content. Your audience does too.
 
