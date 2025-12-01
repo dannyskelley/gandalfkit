@@ -1,0 +1,154 @@
+---
+title: 'Special Days'
+description: 'special days'
+permalink: 'specialdays/'
+eleventyNavigation:
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Important Days</title>
+  <style>
+    :root {
+      --bg-color: #000;
+      --text-color: #fff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #444;
+      color: white;
+      font-size: 1rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      padding: 0.25rem 0;
+      outline: none;
+    }
+
+    .add-btn, .reset-btn {
+      background: none;
+      border: 1px solid #444;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Important Days</h1>
+  </header>
+
+  <div class="section" id="days-section">
+    <div class="card">
+      <input type="text" placeholder="Event Title" class="title" />
+      <input type="text" placeholder="Event Date" class="date" />
+    </div>
+  </div>
+
+  <button class="add-btn" onclick="addCard()">Add Another</button>
+  <button class="reset-btn" onclick="resetCards()">Reset</button>
+
+  <footer>
+    &copy; 2025 Designed with clarity and love.
+  </footer>
+
+  <script>
+    const section = document.getElementById('days-section');
+
+    function addCard(title = '', date = '') {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <input type="text" placeholder="Event Title" class="title" value="${title}" />
+        <input type="text" placeholder="Event Date" class="date" value="${date}" />
+      `;
+      section.appendChild(card);
+      saveCards();
+      bindInputs();
+    }
+
+    function saveCards() {
+      const cards = section.querySelectorAll('.card');
+      const data = Array.from(cards).map(card => ({
+        title: card.querySelector('.title').value,
+        date: card.querySelector('.date').value
+      }));
+      localStorage.setItem('importantDays', JSON.stringify(data));
+    }
+
+    function loadCards() {
+      const saved = JSON.parse(localStorage.getItem('importantDays')) || [];
+      section.innerHTML = '';
+      saved.forEach(({ title, date }) => addCard(title, date));
+    }
+
+    function resetCards() {
+      localStorage.removeItem('importantDays');
+      section.innerHTML = '';
+      addCard();
+    }
+
+    function bindInputs() {
+      const inputs = section.querySelectorAll('input');
+      inputs.forEach(input => {
+        input.addEventListener('input', saveCards);
+      });
+    }
+
+    // Load on page start
+    loadCards();
+    bindInputs();
+  </script>
+</body>
+</html>
